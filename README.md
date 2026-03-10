@@ -41,6 +41,58 @@ cp contract-agents/AGENTS_CONTRACT.md ~/.claude/
 
 **Agent files are minimal** — Shared rules live in AGENTS_CONTRACT.md. Each agent adds only domain-specific behavior.
 
+## How to Use Agents Like Employees
+
+Think of this system as your team. You are the executive who sets direction.
+
+### Mental Model
+
+| Component | Role |
+|-----------|------|
+| You | Executive — sets goals and direction |
+| AGENTS_CONTRACT.md | Employee handbook — how everyone works |
+| spec-orchestrator | Project manager / producer |
+| pm-senior | Strategic advisor |
+| Division agents (eng-*, test-*, etc.) | Specialists you delegate to |
+
+### Where to Start?
+
+**Don't know which agent to use? Start with one of these:**
+
+| Situation | Use this agent |
+|-----------|----------------|
+| Big task, need multiple specialists | `spec-orchestrator` |
+| Need strategic guidance first | `pm-senior` |
+| Want to see available specialists | `"List all [prefix]-* agents"` |
+| Know exactly what you need | Delegate directly to the agent |
+
+### Example Workflows
+
+**1. Let the orchestrator figure it out:**
+```
+"Use spec-orchestrator to help me launch a new SaaS product.
+Coordinate the necessary agents across engineering, design, marketing, and product."
+```
+
+**2. Get strategic direction first:**
+```
+"Use pm-senior to help me plan this feature. Identify what needs
+to happen and which agents to use."
+```
+
+**3. Direct delegation (when you know what you need):**
+```
+"Use eng-frontend-developer to build this React component"
+"Use test-evidence-collector to verify the UI"
+"Use mkt-growth-hacker to design a user acquisition campaign"
+```
+
+### Quick Reference Pattern
+
+1. `"List all [prefix]-* agents"` — See your options
+2. `"Use [agent-name] to [specific task]"` — Delegate the work
+3. `"Use spec-orchestrator to coordinate [goal]"` — Let it figure out who does what
+
 ## Agent Naming
 
 | Prefix | Division | Count |
