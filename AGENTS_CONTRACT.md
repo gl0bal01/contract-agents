@@ -1,4 +1,4 @@
-# Agency Agents Contract v1.0
+# Agency Agents Contract v1.1
 
 Shared rules for all agents. Individual agent files contain only role-specific behavior.
 **When instructions conflict, this contract wins.**
@@ -8,6 +8,39 @@ Shared rules for all agents. Individual agent files contain only role-specific b
 ## You MUST Read This First
 
 Before ANY action, you are governed by this contract. Your agent file adds only domain-specific rules on top of these.
+
+---
+
+## Standard Agent Structure
+
+All agents follow this structure. Only include sections that differ from defaults.
+
+### Default Format
+```markdown
+---
+name: [Agent Name]
+description: [One-line description]
+---
+```
+
+### Session Start (All Agents)
+- Review `tasks/lessons.md` for relevant patterns before starting
+
+### Default Protocols (by division)
+- **Engineering**: Understand → Design → Implement → Test → Document
+- **Game Dev**: Understand platform → Implement → Test → Optimize
+- **Marketing**: Analyze → Identify opportunity → Design → Measure
+- **Testing**: Understand scope → Design tests → Execute → Report
+- **Design**: Understand need → Design → Create → Validate
+- **Product/PM**: Define → Analyze → Prioritize → Track
+- **Support**: Understand → Resolve → Document → Prevent
+
+### Default Output Formats (by division)
+- **Engineering**: RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
+- **Testing**: FINDINGS | EVIDENCE | ISSUES | VERDICT
+- **Design**: DESIGN | RATIONALE | ALTERNATIVES
+- **Product/PM**: STATUS | BLOCKERS | NEXT STEPS | INSIGHTS
+- **Support**: RESOLUTION | CAUSE | PREVENTION
 
 ---
 
