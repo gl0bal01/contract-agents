@@ -2,28 +2,44 @@
 
 > Professional AI agents governed by a shared contract — efficient, coordinated, and production-ready.
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Agents](https://img.shields.io/badge/Agents-101+-blue.svg)
-
 ## What Makes Contract-Agents Different?
 
 **All agents follow [`AGENTS_CONTRACT.md`](AGENTS_CONTRACT.md)** — a shared contract that ensures:
 
-- ✅ **Scope Discipline** — Touch only what's required
-- ✅ **Evidence Requirements** — 3+ `file:line` citations for claims
-- ✅ **Approval Gates** — Hard stops for risky operations
-- ✅ **Commit Discipline** — Safe, bisectable history
-- ✅ **Self-Improvement** — Agents learn from corrections
+- **Scope Discipline** — Touch only what's required
+- **Evidence Requirements** — 3+ `file:line` citations for claims
+- **Approval Gates** — Hard stops for risky operations
+- **Commit Discipline** — Safe, bisectable history
+- **Self-Improvement** — Agents learn from corrections
 
 ## Quick Start
 
 ```bash
 # Clone this repo
-git clone https://github.com/[your-username]/contract-agents.git
+git clone https://github.com/gl0bal01/contract-agents.git
 
 # Copy agents to your Claude Code directory
 cp contract-agents/*.md ~/.claude/agents/
+
+# Copy the shared contract (required)
+cp contract-agents/AGENTS_CONTRACT.md ~/.claude/
 ```
+
+## Best Practices
+
+**Before using any agent, read [`AGENTS_CONTRACT.md`](AGENTS_CONTRACT.md)** — it defines the rules all agents follow.
+
+**Invocation patterns:**
+- `"Use eng-frontend-developer to build this React component"`
+- `"Use test-evidence-collector to verify the UI"`
+- `"Use spec-orchestrator to coordinate this multi-agent workflow"`
+- `"List all test-* agents to see QA options"`
+
+**Key agents:**
+- `spec-orchestrator.md` — Main orchestrator for multi-agent workflows. Use this when coordinating complex tasks across multiple agents.
+- Individual agents — Use for domain-specific work (eng-*, test-*, design-*, etc.)
+
+**Agent files are minimal** — Shared rules live in AGENTS_CONTRACT.md. Each agent adds only domain-specific behavior.
 
 ## Agent Naming
 
@@ -42,7 +58,7 @@ cp contract-agents/*.md ~/.claude/agents/
 
 ## Agent Catalog
 
-### 🏗️ Engineering (`eng-*`)
+### Engineering (`eng-*`)
 
 ```
 eng-ai-engineer.md              eng-frontend-developer.md
@@ -54,7 +70,7 @@ eng-incident-commander.md        eng-threat-detection-engineer.md
 eng-mobile-app-builder.md        eng-wechat-developer.md
 ```
 
-### 🧪 Testing (`test-*`)
+### Testing (`test-*`)
 
 ```
 test-accessibility-auditor.md    test-performance-benchmarker.md
@@ -63,7 +79,7 @@ test-evidence-collector.md       test-tool-evaluator.md
 test-reality-checker.md          test-workflow-optimizer.md
 ```
 
-### 🎨 Design (`design-*`)
+### Design (`design-*`)
 
 ```
 design-brand-guardian.md         design-image-prompt-engineer.md
@@ -72,7 +88,7 @@ design-ui-designer.md            design-ux-researcher.md
 design-visual-storyteller.md     design-whimsy-injector.md
 ```
 
-### 📈 Marketing (`mkt-*`)
+### Marketing (`mkt-*`)
 
 ```
 mkt-app-store-optimizer.md       mkt-instagram-curator.md
@@ -82,17 +98,17 @@ mkt-china-ecommerce.md           mkt-seo-strategist.md
 mkt-content-creator.md           mkt-social-strategist.md
 mkt-growth-hacker.md             mkt-tiktok-strategist.md
 mkt-wechat-account.md            mkt-xiaohongshu-specialist.md
-mkt-xiaohongshu-specialist.md    mkt-zhihu-strategist.md
+mkt-zhihu-strategist.md
 ```
 
-### 📊 Product (`prod-*`)
+### Product (`prod-*`)
 
 ```
 prod-feedback-synthesizer.md     prod-nudge-engine.md
 prod-sprint-prioritizer.md       prod-trend-researcher.md
 ```
 
-### 📋 Project Management (`pm-*`)
+### Project Management (`pm-*`)
 
 ```
 pm-experiment-tracker.md         pm-jira-steward.md
@@ -100,7 +116,7 @@ pm-project-shepherd.md           pm-senior.md
 pm-studio-operations.md          pm-studio-producer.md
 ```
 
-### 🎮 Game Development (`game-*`)
+### Game Development (`game-*`)
 
 **Cross-engine:**
 ```
@@ -133,7 +149,7 @@ game-roblox-avatar.md            game-roblox-designer.md
 game-roblox-scripter.md
 ```
 
-### 🔧 Specialized (`spec-*`)
+### Specialized (`spec-*`)
 
 ```
 spec-analytics-reporter.md       spec-identity-operator.md
@@ -145,7 +161,7 @@ spec-dev-advocate.md             spec-report-distribution.md
 spec-sales-extraction.md
 ```
 
-### 🛟 Support (`support-*`)
+### Support (`support-*`)
 
 ```
 support-analytics.md              support-legal.md

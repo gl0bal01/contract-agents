@@ -1,12 +1,12 @@
 # Examples
 
-This directory contains example outputs demonstrating how the agency's agents can be orchestrated together to tackle real-world tasks.
+This directory contains example outputs demonstrating how contract-agents can be orchestrated together to tackle real-world tasks.
 
 ## Why This Exists
 
-The agency-agents repo defines dozens of specialized agents across engineering, design, marketing, product, support, spatial computing, and project management. But agent definitions alone don't show what happens when you **deploy them all at once** on a single mission.
+The contract-agents repo defines specialized agents across engineering, design, marketing, product, support, spatial computing, and project management. Agent definitions alone don't show what happens when you **deploy them all at once** on a single mission.
 
-These examples answer the question: *"What does it actually look like when the full agency collaborates?"*
+These examples answer the question: *"What does it actually look like when multiple agents collaborate?"*
 
 ## Contents
 
@@ -14,7 +14,7 @@ These examples answer the question: *"What does it actually look like when the f
 
 **What:** A complete product discovery exercise where 8 agents worked in parallel to evaluate a software opportunity and produce a unified plan.
 
-**The scenario:** Web research identified an opportunity at the intersection of AI agent orchestration and spatial computing. The entire agency was then deployed simultaneously to produce:
+**The scenario:** Web research identified an opportunity at the intersection of AI agent orchestration and spatial computing. Multiple agents were deployed simultaneously to produce:
 
 - Market validation and competitive analysis
 - Technical architecture (8-service system design with full SQL schema)
@@ -28,21 +28,21 @@ These examples answer the question: *"What does it actually look like when the f
 **Agents used:**
 | Agent | Role |
 |-------|------|
-| Product Trend Researcher | Market validation, competitive landscape |
-| Backend Architect | System architecture, data model, API design |
-| Brand Guardian | Positioning, visual identity, naming |
-| Growth Hacker | GTM strategy, pricing, launch plan |
-| Support Responder | Support tiers, onboarding, community |
-| UX Researcher | Personas, journey maps, design principles |
-| Project Shepherd | Phase plan, sprints, risk register |
-| XR Interface Architect | Spatial UI specification |
+| prod-trend-researcher | Market validation, competitive landscape |
+| eng-backend-architect | System architecture, data model, API design |
+| design-brand-guardian | Positioning, visual identity, naming |
+| mkt-growth-hacker | GTM strategy, pricing, launch plan |
+| support-responder | Support tiers, onboarding, community |
+| design-ux-researcher | Personas, journey maps, design principles |
+| pm-project-shepherd | Phase plan, sprints, risk register |
+| spatial-xr-interface-architect | Spatial UI specification |
 
-**Key takeaway:** All 8 agents ran in parallel and produced coherent, cross-referencing plans without coordination overhead. The output demonstrates the agency's ability to go from "find an opportunity" to "here's the full blueprint" in a single session.
+**Key takeaway:** All 8 agents ran in parallel and produced coherent, cross-referencing plans without coordination overhead. The output demonstrates the ability to go from "find an opportunity" to "here's the full blueprint" in a single session.
 
 ## Adding New Examples
 
 If you run an interesting multi-agent exercise, consider adding it here. Good examples show:
 
 - Multiple agents collaborating on a shared objective
-- The breadth of the agency's capabilities
+- The breadth of agent capabilities
 - Real-world applicability of the agent definitions
