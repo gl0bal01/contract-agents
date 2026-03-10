@@ -10,22 +10,20 @@ You need a landing page for a new product launch. It needs to look great, conver
 
 | Agent | Role in this workflow |
 |-------|---------------------|
-| Content Creator | Write the copy |
-| UI Designer | Design the layout and component specs |
-| Frontend Developer | Build it |
-| Growth Hacker | Optimize for conversion |
+| mkt-content-creator | Write the copy |
+| design-ui-designer | Design the layout and component specs |
+| eng-frontend-developer | Build it |
+| mkt-growth-hacker | Optimize for conversion |
 
 ## The Workflow
 
 ### Morning: Copy + Design (parallel)
 
-**Step 1a — Activate Content Creator**
+**Step 1a — Content Creation**
 
 ```
-Activate Content Creator.
-
-Write landing page copy for "FlowSync" — an API integration platform
-that connects any two SaaS tools in under 5 minutes.
+Use mkt-content-creator to write landing page copy for "FlowSync" — an API
+integration platform that connects any two SaaS tools in under 5 minutes.
 
 Target audience: developers and technical PMs at mid-size companies.
 Tone: confident, concise, slightly playful.
@@ -41,12 +39,11 @@ Sections needed:
 Keep it scannable. No fluff.
 ```
 
-**Step 1b — Activate UI Designer (in parallel)**
+**Step 1b — UI Design (in parallel)**
 
 ```
-Activate UI Designer.
-
-Design specs for a SaaS landing page. Product: FlowSync (API integration platform).
+Use design-ui-designer to create design specs for a SaaS landing page.
+Product: FlowSync (API integration platform).
 Style: clean, modern, dark mode option. Think Linear or Vercel aesthetic.
 
 Deliver:
@@ -59,15 +56,13 @@ Deliver:
 
 ### Midday: Build
 
-**Step 2 — Activate Frontend Developer**
+**Step 2 — Frontend Development**
 
 ```
-Activate Frontend Developer.
+Use eng-frontend-developer to build a landing page from these specs:
 
-Build a landing page from these specs:
-
-Copy: [paste Content Creator output]
-Design: [paste UI Designer output]
+Copy: [paste mkt-content-creator output]
+Design: [paste design-ui-designer output]
 
 Stack: HTML, Tailwind CSS, minimal vanilla JS (no framework needed).
 Requirements:
@@ -81,12 +76,10 @@ Deliver a single index.html file ready to deploy.
 
 ### Afternoon: Optimize
 
-**Step 3 — Activate Growth Hacker**
+**Step 3 — Conversion Review**
 
 ```
-Activate Growth Hacker.
-
-Review this landing page for conversion optimization:
+Use mkt-growth-hacker to review this landing page for conversion optimization:
 
 [paste the HTML or describe the current page]
 
@@ -104,11 +97,11 @@ Give me specific changes, not general advice.
 
 | Time | Activity | Agent |
 |------|----------|-------|
-| 9:00 | Copy + design kick off (parallel) | Content Creator + UI Designer |
-| 11:00 | Build starts | Frontend Developer |
+| 9:00 | Copy + design kick off (parallel) | mkt-content-creator + design-ui-designer |
+| 11:00 | Build starts | eng-frontend-developer |
 | 14:00 | First version ready | — |
-| 14:30 | Conversion review | Growth Hacker |
-| 15:30 | Apply feedback | Frontend Developer |
+| 14:30 | Conversion review | mkt-growth-hacker |
+| 15:30 | Apply feedback | eng-frontend-developer |
 | 16:30 | Ship | Deploy to Vercel/Netlify |
 
 ## Key Patterns

@@ -53,7 +53,7 @@ The agency has deep spatial computing expertise (XR developers, VisionOS enginee
 
 ## 2. Market Validation
 
-**Agent:** Product Trend Researcher
+**Agent:** prod-trend-researcher
 
 ### Verdict: CONDITIONAL GO -- 2D-First, Spatial-Second
 
@@ -138,7 +138,7 @@ The agency has deep spatial computing expertise (XR developers, VisionOS enginee
 
 ## 3. Technical Architecture
 
-**Agent:** Backend Architect
+**Agent:** eng-backend-architect
 
 ### System Overview
 
@@ -252,7 +252,7 @@ Real-time streaming via WSS with:
 
 ## 4. Brand Strategy
 
-**Agent:** Brand Guardian
+**Agent:** design-brand-guardian
 
 ### Positioning
 
@@ -351,7 +351,7 @@ Three directions for exploration:
 
 ## 5. Go-to-Market & Growth
 
-**Agent:** Growth Hacker
+**Agent:** mkt-growth-hacker
 
 ### North Star Metric
 
@@ -443,7 +443,7 @@ Strategy: 14-day reverse trial (Pro features, then downgrade to Free). Target 5-
 
 ## 6. Customer Support Blueprint
 
-**Agent:** Support Responder
+**Agent:** support-responder
 
 ### Support Tier Structure
 
@@ -527,7 +527,7 @@ NEXUS SPATIAL DISCORD
 
 ## 7. UX Research & Design Direction
 
-**Agent:** UX Researcher
+**Agent:** design-ux-researcher
 
 ### User Personas
 
@@ -611,7 +611,7 @@ Spatial adds value for **structural** tasks (placing, connecting, rearranging no
 
 ## 8. Project Execution Plan
 
-**Agent:** Project Shepherd
+**Agent:** pm-project-shepherd
 
 ### Timeline: 35 Weeks (March 9 -- November 6, 2026)
 
@@ -679,7 +679,7 @@ Spatial adds value for **structural** tasks (placing, connecting, rearranging no
 
 ## 9. Spatial Interface Architecture
 
-**Agent:** XR Interface Architect
+**Agent:** spatial-xr-interface-architect
 
 ### The Command Theater
 

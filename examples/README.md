@@ -10,6 +10,31 @@ These examples answer the question: *"What does it actually look like when multi
 
 ## Contents
 
+### [getting-started.md](./getting-started.md)
+
+**What:** A "Hello World" example for learning how contract-agents work.
+
+**The scenario:** Adding user profile pages to a web app. You don't know where to start.
+
+**What you'll learn:**
+- How to use spec-orchestrator when you're unsure
+- How agents hand off work to each other
+- How to use quality gates before shipping
+
+**Agents used:**
+| Agent | Role |
+|-------|------|
+| spec-orchestrator | Coordinates the workflow, identifies which specialists are needed |
+| eng-backend-architect | API and database design |
+| design-ui-designer | Layout and visual design |
+| eng-frontend-developer | React implementation |
+| test-api-tester | API verification |
+| test-reality-checker | Production readiness gate |
+
+**Key takeaway:** Start with spec-orchestrator when you don't know which agents to use. Let it figure out the specialists and sequence.
+
+---
+
 ### [nexus-spatial-discovery.md](./nexus-spatial-discovery.md)
 
 **What:** A complete product discovery exercise where 8 agents worked in parallel to evaluate a software opportunity and produce a unified plan.
@@ -37,7 +62,54 @@ These examples answer the question: *"What does it actually look like when multi
 | pm-project-shepherd | Phase plan, sprints, risk register |
 | spatial-xr-interface-architect | Spatial UI specification |
 
+**How to run this workflow:**
+
+```
+"Use spec-orchestrator to coordinate a multi-agent product discovery for [your idea].
+Deploy prod-trend-researcher, eng-backend-architect, design-brand-guardian,
+mkt-growth-hacker, support-responder, design-ux-researcher, pm-project-shepherd,
+and spatial-xr-interface-architect in parallel to produce a unified plan."
+```
+
 **Key takeaway:** All 8 agents ran in parallel and produced coherent, cross-referencing plans without coordination overhead. The output demonstrates the ability to go from "find an opportunity" to "here's the full blueprint" in a single session.
+
+---
+
+### [workflow-landing-page.md](./workflow-landing-page.md)
+
+**What:** Ship a conversion-optimized landing page in one day using 4 agents.
+
+**The scenario:** You need a landing page for a new product launch. It needs to look great, convert visitors, and be live by end of day.
+
+**Agents used:**
+| Agent | Role |
+|-------|------|
+| mkt-content-creator | Write the copy |
+| design-ui-designer | Design the layout and component specs |
+| eng-frontend-developer | Build it |
+| mkt-growth-hacker | Optimize for conversion |
+
+**Key takeaway:** Parallel kickoff (copy + design at same time) saves time. Quality gate prevents shipping unoptimized pages.
+
+---
+
+### [workflow-startup-mvp.md](./workflow-startup-mvp.md)
+
+**What:** A step-by-step example of coordinating multiple agents to go from idea to shipped MVP.
+
+**The scenario:** Building a SaaS MVP — a team retrospective tool for remote teams. 4 weeks to ship.
+
+**Agents used:**
+| Agent | Role |
+|-------|------|
+| prod-sprint-prioritizer | Break project into weekly sprints |
+| design-ux-researcher | Validate the idea with user research |
+| eng-backend-architect | Design API and data model |
+| eng-frontend-developer | Build the React app |
+| mkt-growth-hacker | Plan launch strategy |
+| test-reality-checker | Gate each milestone |
+
+**Key takeaway:** Sequential handoffs with quality gates prevents building the wrong thing. Reality checks at midpoint and before launch save you from shipping broken code.
 
 ## Adding New Examples
 
