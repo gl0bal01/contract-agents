@@ -2,6 +2,8 @@
 
 > Professional AI agents governed by a shared contract — efficient, coordinated, and production-ready.
 
+**Version:** 1.1.0 | **Agents:** 121 | **License:** MIT
+
 ## What Makes Contract-Agents Different?
 
 **All agents follow [`AGENTS_CONTRACT.md`](AGENTS_CONTRACT.md)** — a shared contract that ensures:
@@ -275,15 +277,22 @@ contract-agents/
 | Total agents | 121 |
 | Flattened structure | All agents at root |
 | Division prefixes | 10 divisions |
-| Target avg size | ~2-3 KB per agent |
+| Avg size per agent | ~15 lines (with domain rules) / ~10 lines (without) |
+
 
 ## Contributing
 
-When adding new agents:
+Contributions are welcome. When adding new agents:
+
 1. Use division prefix (see catalog above)
-2. Follow [`templates/agent-template.md`](templates/agent-template.md)
-3. Reference `AGENTS_CONTRACT.md` at top
-4. Keep under 100 lines (~3 KB)
+2. Follow the standard format:
+   - Frontmatter with name and description
+   - Domain Rules (if applicable)
+   - Output section (pipe format)
+3. Keep agents minimal — shared rules live in AGENTS_CONTRACT.md
+4. Test with the verification scripts in `tests/`
+
+See [`examples/`](examples/) for reference implementations.
 
 ## License
 
