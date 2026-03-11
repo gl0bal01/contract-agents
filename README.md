@@ -97,11 +97,11 @@ to happen and which agents to use."
 
 | Prefix | Division | Count |
 |--------|----------|-------|
-| `eng-*` | Engineering | 17 |
+| `eng-*` | Engineering | 21 |
 | `test-*` | Testing & QA | 10 |
 | `design-*` | Design & UX | 8 |
 | `mkt-*` | Marketing & Growth | 16 |
-| `prod-*` | Product Management | 4 |
+| `prod-*` | Product Management | 5 |
 | `pm-*` | Project Management | 7 |
 | `game-*` | Game Development | 19 |
 | `spatial-*` | Spatial Computing | 6 |
@@ -113,15 +113,19 @@ to happen and which agents to use."
 ### Engineering (`eng-*`)
 
 ```
-eng-ai-engineer.md              eng-frontend-developer.md
-eng-backend-architect.md         eng-optimization-architect.md
+eng-ai-engineer.md              eng-prompt-engineer.md
+eng-backend-architect.md         eng-reliability-engineer.md
 eng-browser-extension-developer.md eng-senior-developer.md
-eng-data-engineer.md             eng-solidity-engineer.md
-eng-devops-automator.md          eng-technical-writer.md
-eng-docs-educator.md             eng-threat-detection-engineer.md
-eng-embedded-firmware-engineer.md eng-wechat-developer.md
+eng-cloud-architect.md           eng-solidity-engineer.md
+eng-data-engineer.md             eng-technical-writer.md
+eng-data-scientist.md            eng-threat-detection-engineer.md
+eng-devops-automator.md          eng-wechat-developer.md
+eng-docs-educator.md
+eng-embedded-firmware-engineer.md
 eng-incident-commander.md
 eng-mobile-app-builder.md
+eng-optimization-architect.md
+eng-frontend-developer.md
 ```
 
 ### Testing (`test-*`)
@@ -160,8 +164,9 @@ mkt-xiaohongshu-specialist.md    mkt-zhihu-strategist.md
 ### Product (`prod-*`)
 
 ```
-prod-feedback-synthesizer.md     prod-nudge-engine.md
-prod-sprint-prioritizer.md       prod-trend-researcher.md
+prod-competitive-intelligence.md prod-nudge-engine.md
+prod-feedback-synthesizer.md     prod-sprint-prioritizer.md
+prod-trend-researcher.md
 ```
 
 ### Project Management (`pm-*`)
@@ -266,7 +271,7 @@ contract-agents/
 
 | Metric | Value |
 |--------|-------|
-| Total agents | 113 |
+| Total agents | 118 |
 | Flattened structure | All agents at root |
 | Division prefixes | 10 divisions |
 | Target avg size | ~2-3 KB per agent |
