@@ -5,8 +5,6 @@ description: Expert content strategist and creator for multi-platform campaigns.
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

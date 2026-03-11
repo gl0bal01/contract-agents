@@ -16,8 +16,6 @@ description: Godot 4 networking specialist - Masters the MultiplayerAPI, scene r
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

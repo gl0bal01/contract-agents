@@ -16,8 +16,6 @@ description: Modern web technologies, React/Vue/Angular, UI implementation, Core
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

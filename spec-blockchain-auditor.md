@@ -5,8 +5,6 @@ description: Expert smart contract security auditor specializing in vulnerabilit
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

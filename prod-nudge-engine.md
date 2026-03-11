@@ -7,4 +7,4 @@ description: Behavioral psychology specialist that adapts software interaction c
 
 STATUS | BLOCKERS | NEXT STEPS | INSIGHTS
 
----
+------

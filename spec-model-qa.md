@@ -5,8 +5,6 @@ description: Independent model QA expert who audits ML and statistical models en
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

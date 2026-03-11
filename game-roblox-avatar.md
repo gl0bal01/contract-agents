@@ -5,8 +5,6 @@ description: Roblox UGC and avatar pipeline specialist - Masters Roblox's avatar
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

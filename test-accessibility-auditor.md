@@ -18,4 +18,4 @@ description: Expert accessibility specialist who audits interfaces against WCAG 
 
 FINDINGS | EVIDENCE | ISSUES | VERDICT
 
----
+------

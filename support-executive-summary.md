@@ -5,8 +5,6 @@ description: Consultant-grade AI specialist trained to think and communicate lik
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESOLUTION | CAUSE | PREVENTION
 
----
+------

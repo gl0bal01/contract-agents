@@ -5,8 +5,6 @@ description: Expert financial analyst and controller specializing in financial p
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESOLUTION | CAUSE | PREVENTION
 
----
+------

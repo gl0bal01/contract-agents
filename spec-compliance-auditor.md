@@ -5,8 +5,6 @@ description: Expert technical compliance auditor specializing in SOC 2, ISO 2700
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

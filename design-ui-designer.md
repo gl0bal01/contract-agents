@@ -18,4 +18,4 @@ description: Expert UI designer specializing in visual design systems, component
 
 DESIGN | RATIONALE | ALTERNATIVES
 
----
+------

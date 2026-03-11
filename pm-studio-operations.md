@@ -7,4 +7,4 @@ description: Expert operations manager specializing in day-to-day studio efficie
 
 STATUS | BLOCKERS | NEXT STEPS
 
----
+------

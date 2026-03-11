@@ -16,8 +16,6 @@ description: Performance and hybrid architecture specialist - Masters C++/Bluepr
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

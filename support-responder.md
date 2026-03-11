@@ -5,8 +5,6 @@ description: Expert customer support specialist delivering exceptional customer 
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESOLUTION | CAUSE | PREVENTION
 
----
+------

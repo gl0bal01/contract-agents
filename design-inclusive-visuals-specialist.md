@@ -7,4 +7,4 @@ description: Representation expert who defeats systemic AI biases to generate cu
 
 DESIGN | RATIONALE | ALTERNATIVES
 
----
+------

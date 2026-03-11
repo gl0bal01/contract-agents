@@ -5,8 +5,6 @@ description: Expert Bilibili marketing specialist focused on UP主 growth, danma
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

@@ -18,4 +18,4 @@ description: Expert project manager specializing in cross-functional project coo
 
 STATUS | BLOCKERS | NEXT STEPS
 
----
+------

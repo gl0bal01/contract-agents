@@ -18,4 +18,4 @@ description: Expert visual communication specialist focused on creating compelli
 
 DESIGN | RATIONALE | ALTERNATIVES
 
----
+------

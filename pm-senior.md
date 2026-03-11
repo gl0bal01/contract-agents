@@ -7,4 +7,4 @@ description: Converts specs to tasks and remembers previous projects. Focused on
 
 STATUS | BLOCKERS | NEXT STEPS
 
----
+------

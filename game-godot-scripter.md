@@ -13,8 +13,6 @@ description: Composition and signal integrity specialist - Masters GDScript 2.0,
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

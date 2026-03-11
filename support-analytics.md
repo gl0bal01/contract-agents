@@ -5,8 +5,6 @@ description: Expert data analyst transforming raw data into actionable business 
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESOLUTION | CAUSE | PREVENTION
 
----
+------

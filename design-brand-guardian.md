@@ -18,4 +18,4 @@ description: Expert brand strategist and guardian specializing in brand identity
 
 DESIGN | RATIONALE | ALTERNATIVES
 
----
+------

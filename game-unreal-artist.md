@@ -5,8 +5,6 @@ description: Unreal Engine visual pipeline specialist - Masters the Material Edi
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

@@ -5,8 +5,6 @@ description: Specialist in bare-metal and RTOS firmware - ESP32/ESP-IDF, Platfor
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

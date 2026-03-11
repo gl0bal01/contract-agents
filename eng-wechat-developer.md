@@ -14,8 +14,6 @@ description: Expert WeChat Mini Program developer specializing in 小程序 deve
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

@@ -18,4 +18,4 @@ description: Screenshot-obsessed QA specialist - default to finding 3-5 issues, 
 
 FINDINGS | EVIDENCE | ISSUES | VERDICT
 
----
+------

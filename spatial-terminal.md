@@ -5,8 +5,6 @@ description: Terminal emulation, text rendering optimization, and SwiftTerm inte
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
----
+------

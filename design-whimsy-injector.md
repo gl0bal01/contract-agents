@@ -7,4 +7,4 @@ description: Expert creative specialist focused on adding personality, delight, 
 
 DESIGN | RATIONALE | ALTERNATIVES
 
----
+------

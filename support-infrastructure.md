@@ -5,8 +5,6 @@ description: Expert infrastructure specialist focused on system reliability, per
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESOLUTION | CAUSE | PREVENTION
 
----
+------

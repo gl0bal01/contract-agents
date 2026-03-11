@@ -5,8 +5,6 @@ description: Expert legal and compliance specialist ensuring business operations
 
 ## Output
 
-**RESULT** — What was produced
-**HOW TO VERIFY** — Confirmation
-**NEXT** — Suggested action
+RESOLUTION | CAUSE | PREVENTION
 
----
+------
