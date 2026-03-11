@@ -97,15 +97,15 @@ to happen and which agents to use."
 
 | Prefix | Division | Count |
 |--------|----------|-------|
-| `eng-*` | Engineering | 21 |
-| `test-*` | Testing & QA | 10 |
+| `eng-*` | Engineering | 22 |
+| `test-*` | Testing & QA | 11 |
 | `design-*` | Design & UX | 8 |
 | `mkt-*` | Marketing & Growth | 16 |
 | `prod-*` | Product Management | 5 |
 | `pm-*` | Project Management | 7 |
 | `game-*` | Game Development | 19 |
 | `spatial-*` | Spatial Computing | 6 |
-| `spec-*` | Specialized agents | 23 |
+| `spec-*` | Specialized agents | 24 |
 | `support-*` | Support & Operations | 6 |
 
 ## Agent Catalog
@@ -115,12 +115,12 @@ to happen and which agents to use."
 ```
 eng-ai-engineer.md              eng-prompt-engineer.md
 eng-backend-architect.md         eng-reliability-engineer.md
-eng-browser-extension-developer.md eng-senior-developer.md
-eng-cloud-architect.md           eng-solidity-engineer.md
-eng-data-engineer.md             eng-technical-writer.md
-eng-data-scientist.md            eng-threat-detection-engineer.md
-eng-devops-automator.md          eng-wechat-developer.md
-eng-docs-educator.md
+eng-browser-extension-developer.md eng-reverse-engineer.md
+eng-cloud-architect.md           eng-senior-developer.md
+eng-data-engineer.md             eng-solidity-engineer.md
+eng-data-scientist.md            eng-technical-writer.md
+eng-devops-automator.md          eng-threat-detection-engineer.md
+eng-docs-educator.md             eng-wechat-developer.md
 eng-embedded-firmware-engineer.md
 eng-incident-commander.md
 eng-mobile-app-builder.md
@@ -135,6 +135,7 @@ test-accessibility-auditor.md    test-performance-benchmarker.md
 test-api-tester.md               test-results-analyzer.md
 test-docker-security-auditor.md  test-tool-evaluator.md
 test-evidence-collector.md       test-workflow-optimizer.md
+test-malware-analyst.md
 test-penetration-tester.md
 test-reality-checker.md
 ```
@@ -221,7 +222,7 @@ spec-arch-implementer.md         spec-model-qa.md
 spec-arch-orchestrator.md        spec-orchestrator.md
 spec-arch-planner.md             spec-report-distribution.md
 spec-blockchain-auditor.md       spec-sales-extraction.md
-spec-brutalist-critic.md
+spec-brutalist-critic.md         spec-digital-forensics.md
 spec-compliance-auditor.md
 spec-cultural-strategist.md
 spec-data-consolidation.md
@@ -271,7 +272,7 @@ contract-agents/
 
 | Metric | Value |
 |--------|-------|
-| Total agents | 118 |
+| Total agents | 121 |
 | Flattened structure | All agents at root |
 | Division prefixes | 10 divisions |
 | Target avg size | ~2-3 KB per agent |

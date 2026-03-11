@@ -16,9 +16,12 @@
 - eng-prompt-engineer for AI prompt optimization and RAG systems
 - eng-reliability-engineer for SRE practices, SLIs/SLOs, and error budgets
 - prod-competitive-intelligence for competitor analysis and market monitoring
+- eng-reverse-engineer for binary analysis and decompilation
+- test-malware-analyst for malware analysis and threat intelligence
+- spec-digital-forensics for DFIR, incident response, and evidence collection
 
 ### Changed
-- Total agents: 101 → 118
+- Total agents: 101 → 121
 - Standardized all output formats to pipe style
 - Preserved domain rules while removing boilerplate
 
