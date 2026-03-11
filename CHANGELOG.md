@@ -2,6 +2,21 @@
 
 All notable changes to contract-agents will be documented in this file.
 
+## [1.2.0] - 2026-03-11
+
+### Infrastructure
+- Added Makefile for simplified installation (`make install`)
+- Added support for 5 tools: Kilo CLI, Claude Code, Cursor, Goose, OpenCode
+- Created AGENTS.md with developer guidelines for AI agents
+- Replaced complex bash install.sh with lean Makefile
+
+### Changed
+- Simplified install process using Makefile
+- Updated README with Makefile commands
+- Agent files now install directly from `agents/` directory
+- Removed AGENTS.md (consolidated into README)
+- Removed examples/ (duplicates)
+
 ## [1.1.0] - 2026-03-11
 
 ### Architecture & Security

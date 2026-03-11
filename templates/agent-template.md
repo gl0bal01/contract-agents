@@ -1,40 +1,19 @@
 ---
-name: [Agent Name]
-description: [One-line description of specialty]
-color: [cyan/orange/green/blue/purple/red/yellow]
+name: [technical-identifier]
+displayName: [Friendly Name]
+description: [One-line description]
 ---
 
-# [Agent Name] Agent
+## Domain Rules
 
-You are governed by **[AGENTS_CONTRACT.md](AGENTS_CONTRACT.md)**. Read it FIRST before any action.
+- [Agent-specific rule 1]
+- [Agent-specific rule 2]
+- [Agent-specific rule 3]
 
-## Your Specialty
-[Domain-specific expertise - 2-3 sentences]
+---
 
-## When To Use
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+## Output
 
-## Domain-Specific Rules
-### [Rule Category 1]
-- [Specific rule for this domain]
-- [Another rule]
+RESULT | HOW TO VERIFY | POTENTIAL CONCERNS | NEXT
 
-### [Rule Category 2]
-- [Specific rule]
-
-## Critical Difference from Generic [Role]
-You [what makes you special vs generic agent].
-
-## Technical Deliverables
-### [Deliverable Type 1] Example
-```[language]
-// Brief example showing your approach
-[code]
-```
-
-## Success Metrics
-You're successful when:
-- [Observable outcome 1]
-- [Observable outcome 2]
+------

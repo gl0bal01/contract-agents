@@ -4,6 +4,18 @@
 
 **Version:** 1.1.0 | **Agents:** 121 | **License:** MIT
 
+```
+┌─────────────────────────────────────────────┐
+│         CONTRACT-AGENTS                     │
+│                                             │
+│   121 AI Agents • 10 Divisions • 1 Contract │
+│                                             │
+│   eng-*  test-*  design-*  mkt-*  prod-*    │
+│   pm-*   game-*  spatial-*  spec-* support- │
+└─────────────────────────────────────────────┘
+```
+
+
 ## What Makes Contract-Agents Different?
 
 **All agents follow [`AGENTS_CONTRACT.md`](AGENTS_CONTRACT.md)** — a shared contract that ensures:
@@ -16,16 +28,34 @@
 
 ## Quick Start
 
+### Option 1: Makefile (Recommended)
+
 ```bash
 # Clone this repo
 git clone https://github.com/gl0bal01/contract-agents.git
+cd contract-agents
 
-# Copy agents to your Claude Code directory
-cp contract-agents/*.md ~/.claude/agents/
+# Install to all detected tools
+make install
 
-# Copy the shared contract (required)
-cp contract-agents/AGENTS_CONTRACT.md ~/.claude/
+# Or install to specific tool
+make install-kilo
+make install-claude
+make install-cursor
+make install-goose
+make install-opencode
 ```
+
+### Option 2: Manual Install
+
+```bash
+# Copy agents to your tool
+cp agents/*.md ~/.claude/agents/       # Claude Code
+cp agents/*.md ~/.kilo/agents/        # Kilo CLI
+cp agents/*.md ~/.goose/agents/       # Goose
+```
+
+Supported tools: Kilo CLI, Claude Code, Cursor, Goose, OpenCode
 
 ## Best Practices
 
@@ -252,50 +282,49 @@ support-finance.md               support-infrastructure.md
 
 ```
 contract-agents/
-├── eng-*.md              # Engineering agents
-├── test-*.md             # Testing agents
-├── design-*.md           # Design agents
-├── mkt-*.md              # Marketing agents
-├── prod-*.md             # Product agents
-├── pm-*.md               # Project Management agents
-├── game-*.md             # Game Development agents
-├── spatial-*.md          # Spatial Computing agents
-├── spec-*.md             # Specialized agents
-├── support-*.md          # Support agents
-├── AGENTS_CONTRACT.md    # Shared contract (read this first!)
+├── agents/               # 121 agent definitions
+│   ├── eng-*.md          # Engineering (22)
+│   ├── test-*.md         # Testing (11)
+│   ├── design-*.md       # Design (8)
+│   ├── mkt-*.md          # Marketing (16)
+│   ├── prod-*.md         # Product (5)
+│   ├── pm-*.md           # Project Management (7)
+│   ├── game-*.md         # Game Development (19)
+│   ├── spatial-*.md      # Spatial Computing (6)
+│   ├── spec-*.md         # Specialized (24)
+│   ├── support-*.md      # Support (6)
+│   └── AGENTS_CONTRACT.md # Shared contract
 ├── templates/            # Agent template
-├── tasks/                # Lessons learned, task tracking
-├── scripts/              # Refactor tools
-├── tests/                # Verification scripts
-└── docs/                 # Documentation
+├── tasks/               # Lessons learned
+├── scripts/             # Utilities
+├── tests/               # Validation
+├── docs/                # Documentation
+└── Makefile             # Install commands
 ```
 
-## Token Efficiency
+## Developer Commands
 
-| Metric | Value |
-|--------|-------|
-| Total agents | 121 |
-| Flattened structure | All agents at root |
-| Division prefixes | 10 divisions |
-| Avg size per agent | ~15 lines (with domain rules) / ~10 lines (without) |
-
+```bash
+make help              # Show targets
+make install           # Install to all tools
+make install-kilo     # Kilo CLI
+make install-claude   # Claude Code
+make install-cursor   # Cursor
+make install-goose    # Goose
+make install-opencode # OpenCode
+make test             # Run validation
+make clean            # Remove installs
+```
 
 ## Contributing
 
-Contributions are welcome. When adding new agents:
-
 1. Use division prefix (see catalog above)
-2. Follow the standard format:
-   - Frontmatter with name and description
-   - Domain Rules (if applicable)
-   - Output section (pipe format)
-3. Keep agents minimal — shared rules live in AGENTS_CONTRACT.md
-4. Test with the verification scripts in `tests/`
-
-See [`examples/`](examples/) for reference implementations.
+2. Follow standard format: frontmatter + domain rules + output
+3. Keep agents minimal — shared rules in AGENTS_CONTRACT.md
+4. Test: `make test`
 
 ## License
 
-MIT — Based on [agency-agents](https://github.com/msitarzewski/agency-agents) by @msitarzewski
+- MIT License - see [LICENSE](LICENSE) for details.
+- Based on [agency-agents](https://github.com/msitarzewski/agency-agents) by @msitarzewski and inspired by [black-box-architecture](https://github.com/gl0bal01/black-box-architecture).
 
-Inspired by [black-box-architecture](https://github.com/gl0bal01/black-box-architecture) by @gl0bal01
