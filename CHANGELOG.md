@@ -3,15 +3,17 @@
 ## [1.1.0] - 2026-03-11
 
 ### Added
-- Architecture workflow agents (arch-analyzer, arch-debugger, arch-implementer, arch-orchestrator, arch-planner)
-- brutalist-critic for unfiltered project viability assessment
-- indie-business-strategist for solo developer business strategy
-- docs-educator for documentation and educational content
-- docker-security-auditor for container security hardening
-- monetization-optimizer for pricing and revenue optimization
+- Architecture workflow agents (spec-arch-analyzer, spec-arch-debugger, spec-arch-implementer, spec-arch-orchestrator, spec-arch-planner)
+- spec-brutalist-critic for unfiltered project viability assessment
+- pm-indie-business-strategist for solo developer business strategy
+- eng-docs-educator for documentation and educational content
+- test-docker-security-auditor for container security hardening
+- mkt-monetization-optimizer for pricing and revenue optimization
+- eng-browser-extension-developer for Chrome/Firefox/Edge extension development
+- test-penetration-tester for security testing and vulnerability assessment
 
 ### Changed
-- Total agents: 101 → 111
+- Total agents: 101 → 113
 - Standardized all output formats to pipe style
 - Preserved domain rules while removing boilerplate
 

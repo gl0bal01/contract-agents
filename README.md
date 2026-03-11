@@ -97,8 +97,8 @@ to happen and which agents to use."
 
 | Prefix | Division | Count |
 |--------|----------|-------|
-| `eng-*` | Engineering | 16 |
-| `test-*` | Testing & QA | 9 |
+| `eng-*` | Engineering | 17 |
+| `test-*` | Testing & QA | 10 |
 | `design-*` | Design & UX | 8 |
 | `mkt-*` | Marketing & Growth | 16 |
 | `prod-*` | Product Management | 4 |
@@ -115,11 +115,12 @@ to happen and which agents to use."
 ```
 eng-ai-engineer.md              eng-frontend-developer.md
 eng-backend-architect.md         eng-optimization-architect.md
-eng-data-engineer.md             eng-senior-developer.md
-eng-devops-automator.md          eng-solidity-engineer.md
-eng-docs-educator.md             eng-technical-writer.md
-eng-embedded-firmware-engineer.md eng-threat-detection-engineer.md
-eng-incident-commander.md        eng-wechat-developer.md
+eng-browser-extension-developer.md eng-senior-developer.md
+eng-data-engineer.md             eng-solidity-engineer.md
+eng-devops-automator.md          eng-technical-writer.md
+eng-docs-educator.md             eng-threat-detection-engineer.md
+eng-embedded-firmware-engineer.md eng-wechat-developer.md
+eng-incident-commander.md
 eng-mobile-app-builder.md
 ```
 
@@ -130,6 +131,7 @@ test-accessibility-auditor.md    test-performance-benchmarker.md
 test-api-tester.md               test-results-analyzer.md
 test-docker-security-auditor.md  test-tool-evaluator.md
 test-evidence-collector.md       test-workflow-optimizer.md
+test-penetration-tester.md
 test-reality-checker.md
 ```
 
@@ -264,7 +266,7 @@ contract-agents/
 
 | Metric | Value |
 |--------|-------|
-| Total agents | 111 |
+| Total agents | 113 |
 | Flattened structure | All agents at root |
 | Division prefixes | 10 divisions |
 | Target avg size | ~2-3 KB per agent |
