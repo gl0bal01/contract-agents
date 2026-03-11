@@ -98,14 +98,14 @@ to happen and which agents to use."
 | Prefix | Division | Count |
 |--------|----------|-------|
 | `eng-*` | Engineering | 16 |
-| `test-*` | Testing & QA | 8 |
+| `test-*` | Testing & QA | 9 |
 | `design-*` | Design & UX | 8 |
-| `mkt-*` | Marketing & Growth | 15 |
+| `mkt-*` | Marketing & Growth | 16 |
 | `prod-*` | Product Management | 4 |
-| `pm-*` | Project Management | 6 |
+| `pm-*` | Project Management | 7 |
 | `game-*` | Game Development | 19 |
 | `spatial-*` | Spatial Computing | 6 |
-| `spec-*` | Specialized agents | 13 |
+| `spec-*` | Specialized agents | 23 |
 | `support-*` | Support & Operations | 6 |
 
 ## Agent Catalog
@@ -117,9 +117,10 @@ eng-ai-engineer.md              eng-frontend-developer.md
 eng-backend-architect.md         eng-optimization-architect.md
 eng-data-engineer.md             eng-senior-developer.md
 eng-devops-automator.md          eng-solidity-engineer.md
-eng-embedded-firmware-engineer.md eng-technical-writer.md
-eng-incident-commander.md        eng-threat-detection-engineer.md
-eng-mobile-app-builder.md        eng-wechat-developer.md
+eng-docs-educator.md             eng-technical-writer.md
+eng-embedded-firmware-engineer.md eng-threat-detection-engineer.md
+eng-incident-commander.md        eng-wechat-developer.md
+eng-mobile-app-builder.md
 ```
 
 ### Testing (`test-*`)
@@ -127,8 +128,9 @@ eng-mobile-app-builder.md        eng-wechat-developer.md
 ```
 test-accessibility-auditor.md    test-performance-benchmarker.md
 test-api-tester.md               test-results-analyzer.md
-test-evidence-collector.md       test-tool-evaluator.md
-test-reality-checker.md          test-workflow-optimizer.md
+test-docker-security-auditor.md  test-tool-evaluator.md
+test-evidence-collector.md       test-workflow-optimizer.md
+test-reality-checker.md
 ```
 
 ### Design (`design-*`)
@@ -149,8 +151,8 @@ mkt-bilibili-strategist.md       mkt-reddit-builder.md
 mkt-china-ecommerce.md           mkt-seo-strategist.md
 mkt-content-creator.md           mkt-social-strategist.md
 mkt-growth-hacker.md             mkt-tiktok-strategist.md
-mkt-wechat-account.md            mkt-xiaohongshu-specialist.md
-mkt-zhihu-strategist.md
+mkt-monetization-optimizer.md    mkt-wechat-account.md
+mkt-xiaohongshu-specialist.md    mkt-zhihu-strategist.md
 ```
 
 ### Product (`prod-*`)
@@ -163,9 +165,10 @@ prod-sprint-prioritizer.md       prod-trend-researcher.md
 ### Project Management (`pm-*`)
 
 ```
-pm-experiment-tracker.md         pm-jira-steward.md
-pm-project-shepherd.md           pm-senior.md
-pm-studio-operations.md          pm-studio-producer.md
+pm-experiment-tracker.md         pm-indie-business-strategist.md
+pm-jira-steward.md               pm-project-shepherd.md
+pm-senior.md                     pm-studio-operations.md
+pm-studio-producer.md
 ```
 
 ### Game Development (`game-*`)
@@ -205,12 +208,17 @@ game-roblox-scripter.md
 
 ```
 spec-analytics-reporter.md       spec-identity-operator.md
-spec-blockchain-auditor.md       spec-identity-trust.md
-spec-compliance-auditor.md       spec-lsp-engineer.md
-spec-cultural-strategist.md       spec-model-qa.md
-spec-data-consolidation.md       spec-orchestrator.md
-spec-dev-advocate.md             spec-report-distribution.md
-spec-sales-extraction.md
+spec-arch-analyzer.md            spec-identity-trust.md
+spec-arch-debugger.md            spec-lsp-engineer.md
+spec-arch-implementer.md         spec-model-qa.md
+spec-arch-orchestrator.md        spec-orchestrator.md
+spec-arch-planner.md             spec-report-distribution.md
+spec-blockchain-auditor.md       spec-sales-extraction.md
+spec-brutalist-critic.md
+spec-compliance-auditor.md
+spec-cultural-strategist.md
+spec-data-consolidation.md
+spec-dev-advocate.md
 ```
 
 ### Support (`support-*`)
@@ -256,7 +264,7 @@ contract-agents/
 
 | Metric | Value |
 |--------|-------|
-| Total agents | 101 |
+| Total agents | 111 |
 | Flattened structure | All agents at root |
 | Division prefixes | 10 divisions |
 | Target avg size | ~2-3 KB per agent |

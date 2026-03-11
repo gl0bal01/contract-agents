@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.0] - 2026-03-11
+
+### Added
+- Architecture workflow agents (arch-analyzer, arch-debugger, arch-implementer, arch-orchestrator, arch-planner)
+- brutalist-critic for unfiltered project viability assessment
+- indie-business-strategist for solo developer business strategy
+- docs-educator for documentation and educational content
+- docker-security-auditor for container security hardening
+- monetization-optimizer for pricing and revenue optimization
+
+### Changed
+- Total agents: 101 → 111
+- Standardized all output formats to pipe style
+- Preserved domain rules while removing boilerplate
+
 ## [1.0.0] - 2026-03-10
 
 ### Added
