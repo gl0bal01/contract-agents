@@ -2,6 +2,29 @@
 
 All notable changes to contract-agents will be documented in this file.
 
+## [1.3.0] - 2026-03-12
+
+### Contract Improvements (v2.0)
+- Added Operating Goals: constant velocity, smallest correct change, reviewability, staff engineer bar
+- Added Assumption Surfacing: explicit assumption stating before non-trivial work
+- Added Confusion Management: stop on ambiguous reqs, ask clarifying questions
+- Added Security section: first-class security requirements checklist
+- Added Verification Ladder: 4-level verification strategy (lint → tests → full → manual)
+- Added Task Management: `tasks/todo.md` format for multi-step tracking
+- Added Sub-Agent Delegation Policy: orchestrator-only rule + handoff packet format
+- Expanded Quality Gates: 9 items (was 6), added security & confusion checks
+
+### Contract v2.0 Refinements
+- Made AGENTS_CONTRACT.md universal (works for all agent types: engineering, marketing, design, support, etc.)
+- Removed tech-specific terminology (public API, database schemas, lint/typecheck → "significant work", "persistent data", "automated checks")
+- Added note for non-version-controlled work in Commit Discipline
+- Simplified Evidence Rules to accept URLs/screenshots/research for non-code work
+- Contract reduced from 259 to ~170 lines
+
+### Changed
+- AGENTS_CONTRACT.md: v1.1 → v2.0
+- All agents now governed by v2.0 contract with enhanced operational rigor
+
 ## [1.2.0] - 2026-03-11
 
 ### Infrastructure

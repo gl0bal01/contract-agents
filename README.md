@@ -2,7 +2,7 @@
 
 > Professional AI agents governed by a shared contract — efficient, coordinated, and production-ready.
 
-**Version:** 1.1.0 | **Agents:** 121 | **License:** MIT
+**Version:** 1.3.0 | **Agents:** 121 | **License:** MIT
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -18,13 +18,18 @@
 
 ## What Makes Contract-Agents Different?
 
-**All agents follow [`AGENTS_CONTRACT.md`](AGENTS_CONTRACT.md)** — a shared contract that ensures:
+**All agents follow [`AGENTS_CONTRACT.md`](agents/AGENTS_CONTRACT.md) v2.0** — a shared contract that ensures:
 
+- **Operating Goals** — Constant velocity, smallest correct change, staff engineer bar
 - **Scope Discipline** — Touch only what's required
-- **Evidence Requirements** — 3+ `file:line` citations for claims
+- **Confusion Management** — Stop on ambiguous reqs, ask clarifying questions
+- **Evidence Rules** — Support claims with evidence (file:line for code, URLs/research for non-code)
+- **Security First** — First-class security requirements
 - **Approval Gates** — Hard stops for risky operations
+- **Verification** — automated → tests → full → manual
 - **Commit Discipline** — Safe, bisectable history
 - **Self-Improvement** — Agents learn from corrections
+- **Delegation Policy** — Orchestrator-only sub-agent spawning
 
 ## Quick Start
 
@@ -59,7 +64,7 @@ Supported tools: Kilo CLI, Claude Code, Cursor, Goose, OpenCode
 
 ## Best Practices
 
-**Before using any agent, read [`AGENTS_CONTRACT.md`](AGENTS_CONTRACT.md)** — it defines the rules all agents follow.
+**Before using any agent, read [`AGENTS_CONTRACT.md`](agents/AGENTS_CONTRACT.md)** — it defines the rules all agents follow.
 
 **Invocation patterns:**
 - `"Use eng-frontend-developer to build this React component"`
