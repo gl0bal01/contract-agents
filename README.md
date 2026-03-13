@@ -1,8 +1,17 @@
 # Contract-Agents
 
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Agents](https://img.shields.io/badge/agents-121-brightgreen)
+![Contract](https://img.shields.io/badge/contract-v2.0-orange)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-compatible-blueviolet)
+![Kilo CLI](https://img.shields.io/badge/Kilo%20CLI-compatible-blueviolet)
+![Goose](https://img.shields.io/badge/Goose-compatible-blueviolet)
+![OpenCode](https://img.shields.io/badge/OpenCode-compatible-blueviolet)
+
 > Professional AI agents governed by a shared contract — efficient, coordinated, and production-ready.
 
-**Version:** 1.3.0 | **Agents:** 121 | **License:** MIT
+> You set the direction. They do the work. That's the deal.
+
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -40,27 +49,40 @@
 git clone https://github.com/gl0bal01/contract-agents.git
 cd contract-agents
 
-# Install to all detected tools
+# Install globally (default — user-wide config)
 make install
 
-# Or install to specific tool
+# Install to a specific tool
 make install-kilo
 make install-claude
-make install-cursor
 make install-goose
 make install-opencode
+
+# Install locally (per-project)
+make install SCOPE=local
+
+# Install locally to a specific project
+make install SCOPE=local LOCAL_PATH=~/my-project
+
+# Install only one division
+make install-claude DIVISION=eng
 ```
 
 ### Option 2: Manual Install
 
 ```bash
-# Copy agents to your tool
-cp agents/*.md ~/.claude/agents/       # Claude Code
-cp agents/*.md ~/.kilo/agents/        # Kilo CLI
-cp agents/*.md ~/.goose/agents/       # Goose
+# Global (user-wide)
+cp agents/*.md ~/.claude/agents/              # Claude Code
+cp agents/*.md ~/.kilo/agents/               # Kilo CLI
+cp agents/*.md ~/.goose/agents/              # Goose
+cp agents/*.md ~/.config/opencode/agents/    # OpenCode
+
+# Local (per-project)
+cp agents/*.md /path/to/project/.claude/agents/
+cp agents/*.md /path/to/project/.opencode/agents/
 ```
 
-Supported tools: Kilo CLI, Claude Code, Cursor, Goose, OpenCode
+Supported tools: Kilo CLI, Claude Code, Goose, OpenCode
 
 ## Best Practices
 
@@ -69,14 +91,14 @@ Supported tools: Kilo CLI, Claude Code, Cursor, Goose, OpenCode
 **Invocation patterns:**
 - `"Use eng-frontend-developer to build this React component"`
 - `"Use test-evidence-collector to verify the UI"`
-- `"Use spec-orchestrator to coordinate this multi-agent workflow"`
+- `"Use contract-orchestrator to coordinate this multi-agent workflow"`
 - `"List all test-* agents to see QA options"`
 
 **Key agents:**
-- `spec-orchestrator.md` — Main orchestrator for multi-agent workflows. Use this when coordinating complex tasks across multiple agents.
+- `contract-orchestrator.md` — Main orchestrator for multi-agent workflows. It will always present a proposed pipeline (which agents, in what order, and why) and wait for your approval before delegating anything.
 - Individual agents — Use for domain-specific work (eng-*, test-*, design-*, etc.)
 
-**Agent files are minimal** — Shared rules live in AGENTS_CONTRACT.md. Each agent adds only domain-specific behavior.
+**Agent files are minimal** — Shared rules live in AGENTS_CONTRACT.md. Each agent adds only domain-specific behavior. Every agent includes a contract directive (`> **Contract**: Read AGENTS_CONTRACT.md before proceeding.`) so the contract is loaded regardless of which tool you use.
 
 ## How to Use Agents Like Employees
 
@@ -88,7 +110,7 @@ Think of this system as your team. You are the executive who sets direction.
 |-----------|------|
 | You | Executive — sets goals and direction |
 | AGENTS_CONTRACT.md | Employee handbook — how everyone works |
-| spec-orchestrator | Project manager / producer |
+| contract-orchestrator | Project manager / producer |
 | pm-senior | Strategic advisor |
 | Division agents (eng-*, test-*, etc.) | Specialists you delegate to |
 
@@ -98,7 +120,7 @@ Think of this system as your team. You are the executive who sets direction.
 
 | Situation | Use this agent |
 |-----------|----------------|
-| Big task, need multiple specialists | `spec-orchestrator` |
+| Big task, need multiple specialists | `contract-orchestrator` |
 | Need strategic guidance first | `pm-senior` |
 | Want to see available specialists | `"List all [prefix]-* agents"` |
 | Know exactly what you need | Delegate directly to the agent |
@@ -107,9 +129,11 @@ Think of this system as your team. You are the executive who sets direction.
 
 **1. Let the orchestrator figure it out:**
 ```
-"Use spec-orchestrator to help me launch a new SaaS product.
+"Use contract-orchestrator to help me launch a new SaaS product.
 Coordinate the necessary agents across engineering, design, marketing, and product."
 ```
+The orchestrator will reply with a proposed pipeline listing every agent it plans to use, in order, before doing anything. Approve or ask it to adjust.
+
 
 **2. Get strategic direction first:**
 ```
@@ -128,7 +152,7 @@ to happen and which agents to use."
 
 1. `"List all [prefix]-* agents"` — See your options
 2. `"Use [agent-name] to [specific task]"` — Delegate the work
-3. `"Use spec-orchestrator to coordinate [goal]"` — Let it figure out who does what
+3. `"Use contract-orchestrator to coordinate [goal]"` — Let it figure out who does what
 
 ## Agent Naming
 
@@ -256,7 +280,7 @@ spec-analytics-reporter.md       spec-identity-operator.md
 spec-arch-analyzer.md            spec-identity-trust.md
 spec-arch-debugger.md            spec-lsp-engineer.md
 spec-arch-implementer.md         spec-model-qa.md
-spec-arch-orchestrator.md        spec-orchestrator.md
+spec-arch-orchestrator.md        contract-orchestrator.md
 spec-arch-planner.md             spec-report-distribution.md
 spec-blockchain-auditor.md       spec-sales-extraction.md
 spec-brutalist-critic.md         spec-digital-forensics.md
@@ -279,7 +303,7 @@ support-finance.md               support-infrastructure.md
 ```
 "Use eng-frontend-developer to build this React component"
 "Use test-evidence-collector to verify the UI"
-"Use spec-orchestrator to coordinate this workflow"
+"Use contract-orchestrator to coordinate this workflow"
 "List all test-* agents to see QA options"
 ```
 
@@ -298,7 +322,8 @@ contract-agents/
 │   ├── spatial-*.md      # Spatial Computing (6)
 │   ├── spec-*.md         # Specialized (24)
 │   ├── support-*.md      # Support (6)
-│   └── AGENTS_CONTRACT.md # Shared contract
+│   ├── AGENTS_CONTRACT.md # Shared contract
+│   └── contract-orchestrator.md # Master orchestrator
 ├── templates/            # Agent template
 ├── tasks/               # Lessons learned
 ├── scripts/             # Utilities
@@ -310,23 +335,28 @@ contract-agents/
 ## Developer Commands
 
 ```bash
-make help              # Show targets
-make install           # Install to all tools
-make install-kilo     # Kilo CLI
-make install-claude   # Claude Code
-make install-cursor   # Cursor
-make install-goose    # Goose
-make install-opencode # OpenCode
-make test             # Run validation
-make clean            # Remove installs
+make help                                     # Show targets and options
+make install                                  # Global install, all tools
+make install SCOPE=local                      # Local install to current project
+make install SCOPE=local LOCAL_PATH=~/myapp   # Local install to specific project
+make install-kilo DIVISION=eng                # Global, eng agents to Kilo
+make install-claude DIVISION=mkt              # Global, mkt agents to Claude
+make test                                     # Run validation
+make clean                                    # Remove installs
 ```
 
 ## Contributing
 
 1. Use division prefix (see catalog above)
-2. Follow standard format: frontmatter + domain rules + output
-3. Keep agents minimal — shared rules in AGENTS_CONTRACT.md
-4. Test: `make test`
+2. Follow standard format: frontmatter + contract directive + domain rules + output
+3. Include `> **Contract**: Read `AGENTS_CONTRACT.md` before proceeding.` after frontmatter
+4. Add 4-6 domain-specific rules (not duplicating AGENTS_CONTRACT.md)
+5. Keep agents minimal — shared rules in AGENTS_CONTRACT.md
+6. Test: `make test`
+
+## Disclaimer
+
+Contract-Agents provides agent definitions and installation tooling as-is. The authors are not responsible for any damage, data loss, or unintended behavior resulting from the use or misuse of these agents. AI agents can produce incorrect, incomplete, or harmful outputs — always review their work before applying it. You are solely responsible for how you use, configure, and deploy these agents in your environment.
 
 ## License
 
