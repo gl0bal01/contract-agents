@@ -2,6 +2,19 @@
 
 All notable changes to contract-agents will be documented in this file.
 
+## [1.3.1] - 2026-03-14
+
+### Fixed
+- Fixed agent count inconsistency: README table now matches actual file counts (was summing to 124, actual is 121)
+- Engineering count corrected: 22 → 23 (added missing eng-rapid-prototyper, eng-security-engineer to catalog)
+- Specialized count corrected: 24 → 19 (removed inflated count)
+- Removed vague "production-ready" claim from subtitle, replaced with verifiable "specialized, consistent, and human-guided"
+
+### Changed
+- Renamed spec-orchestrator.md → contract-orchestrator.md to match its role as the master orchestrator
+- contract-orchestrator now has explicit Agent tool delegation instructions (Core Rule, Workflow, How to Delegate sections)
+- contract-orchestrator listed as its own row in the naming table (not under spec-*)
+
 ## [1.3.0] - 2026-03-12
 
 ### Contract Improvements (v2.0)

@@ -8,7 +8,7 @@
 ![Goose](https://img.shields.io/badge/Goose-compatible-blueviolet)
 ![OpenCode](https://img.shields.io/badge/OpenCode-compatible-blueviolet)
 
-> Professional AI agents governed by a shared contract — efficient, coordinated, and production-ready.
+> Professional AI agents governed by a shared contract — specialized, consistent, and human-guided.
 
 > You set the direction. They do the work. That's the deal.
 
@@ -158,7 +158,7 @@ to happen and which agents to use."
 
 | Prefix | Division | Count |
 |--------|----------|-------|
-| `eng-*` | Engineering | 22 |
+| `eng-*` | Engineering | 23 |
 | `test-*` | Testing & QA | 11 |
 | `design-*` | Design & UX | 8 |
 | `mkt-*` | Marketing & Growth | 16 |
@@ -166,8 +166,9 @@ to happen and which agents to use."
 | `pm-*` | Project Management | 7 |
 | `game-*` | Game Development | 19 |
 | `spatial-*` | Spatial Computing | 6 |
-| `spec-*` | Specialized agents | 24 |
+| `spec-*` | Specialized agents | 19 |
 | `support-*` | Support & Operations | 6 |
+| `contract-orchestrator` | Orchestration | 1 |
 
 ## Agent Catalog
 
@@ -183,10 +184,12 @@ eng-data-scientist.md            eng-technical-writer.md
 eng-devops-automator.md          eng-threat-detection-engineer.md
 eng-docs-educator.md             eng-wechat-developer.md
 eng-embedded-firmware-engineer.md
+eng-frontend-developer.md
 eng-incident-commander.md
 eng-mobile-app-builder.md
 eng-optimization-architect.md
-eng-frontend-developer.md
+eng-rapid-prototyper.md
+eng-security-engineer.md
 ```
 
 ### Testing (`test-*`)
@@ -280,7 +283,7 @@ spec-analytics-reporter.md       spec-identity-operator.md
 spec-arch-analyzer.md            spec-identity-trust.md
 spec-arch-debugger.md            spec-lsp-engineer.md
 spec-arch-implementer.md         spec-model-qa.md
-spec-arch-orchestrator.md        contract-orchestrator.md
+spec-arch-orchestrator.md
 spec-arch-planner.md             spec-report-distribution.md
 spec-blockchain-auditor.md       spec-sales-extraction.md
 spec-brutalist-critic.md         spec-digital-forensics.md
@@ -312,7 +315,7 @@ support-finance.md               support-infrastructure.md
 ```
 contract-agents/
 ├── agents/               # 121 agent definitions
-│   ├── eng-*.md          # Engineering (22)
+│   ├── eng-*.md          # Engineering (23)
 │   ├── test-*.md         # Testing (11)
 │   ├── design-*.md       # Design (8)
 │   ├── mkt-*.md          # Marketing (16)
@@ -320,7 +323,7 @@ contract-agents/
 │   ├── pm-*.md           # Project Management (7)
 │   ├── game-*.md         # Game Development (19)
 │   ├── spatial-*.md      # Spatial Computing (6)
-│   ├── spec-*.md         # Specialized (24)
+│   ├── spec-*.md         # Specialized (19)
 │   ├── support-*.md      # Support (6)
 │   ├── AGENTS_CONTRACT.md # Shared contract
 │   └── contract-orchestrator.md # Master orchestrator
