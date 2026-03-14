@@ -219,7 +219,7 @@ design-visual-storyteller.md     design-whimsy-injector.md
 mkt-app-store-optimizer.md       mkt-instagram-curator.md
 mkt-baidu-seo.md                 mkt-kuaishou-strategist.md
 mkt-bilibili-strategist.md       mkt-reddit-builder.md
-mkt-china-ecommerce.md           mkt-seo-strategist.md
+mkt-twitter-engager.md           mkt-seo-strategist.md
 mkt-content-creator.md           mkt-social-strategist.md
 mkt-growth-hacker.md             mkt-tiktok-strategist.md
 mkt-monetization-optimizer.md    mkt-wechat-account.md
@@ -274,6 +274,14 @@ game-godot-shader.md
 ```
 game-roblox-avatar.md            game-roblox-designer.md
 game-roblox-scripter.md
+```
+
+### Spatial Computing (`spatial-*`)
+
+```
+spatial-cockpit.md               spatial-visionos.md
+spatial-metal-engineer.md        spatial-xr-dev.md
+spatial-terminal.md              spatial-xr-interface.md
 ```
 
 ### Specialized (`spec-*`)
@@ -356,10 +364,6 @@ make clean                                    # Remove installs
 4. Add 4-6 domain-specific rules (not duplicating AGENTS_CONTRACT.md)
 5. Keep agents minimal — shared rules in AGENTS_CONTRACT.md
 6. Test: `make test`
-
-## Disclaimer
-
-Contract-Agents provides agent definitions and installation tooling as-is. The authors are not responsible for any damage, data loss, or unintended behavior resulting from the use or misuse of these agents. AI agents can produce incorrect, incomplete, or harmful outputs — always review their work before applying it. You are solely responsible for how you use, configure, and deploy these agents in your environment.
 
 ## License
 
