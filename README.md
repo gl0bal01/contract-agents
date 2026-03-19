@@ -1,7 +1,7 @@
 # Contract-Agents
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Agents](https://img.shields.io/badge/agents-121-brightgreen)
+![Agents](https://img.shields.io/badge/agents-125-brightgreen)
 ![Contract](https://img.shields.io/badge/contract-v2.0-orange)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-compatible-blueviolet)
 ![Kilo CLI](https://img.shields.io/badge/Kilo%20CLI-compatible-blueviolet)
@@ -17,7 +17,7 @@
 ┌─────────────────────────────────────────────┐
 │         CONTRACT-AGENTS                     │
 │                                             │
-│   121 AI Agents • 10 Divisions • 1 Contract │
+│   125 AI Agents • 10 Divisions • 1 Contract │
 │                                             │
 │   eng-*  test-*  design-*  mkt-*  prod-*    │
 │   pm-*   game-*  spatial-*  spec-* support- │
@@ -161,12 +161,12 @@ to happen and which agents to use."
 | `eng-*` | Engineering | 23 |
 | `test-*` | Testing & QA | 11 |
 | `design-*` | Design & UX | 8 |
-| `mkt-*` | Marketing & Growth | 16 |
+| `mkt-*` | Marketing & Growth | 17 |
 | `prod-*` | Product Management | 5 |
 | `pm-*` | Project Management | 7 |
 | `game-*` | Game Development | 19 |
 | `spatial-*` | Spatial Computing | 6 |
-| `spec-*` | Specialized agents | 19 |
+| `spec-*` | Specialized agents | 22 |
 | `support-*` | Support & Operations | 6 |
 | `contract-orchestrator` | Orchestration | 1 |
 
@@ -224,6 +224,7 @@ mkt-content-creator.md           mkt-social-strategist.md
 mkt-growth-hacker.md             mkt-tiktok-strategist.md
 mkt-monetization-optimizer.md    mkt-wechat-account.md
 mkt-xiaohongshu-specialist.md    mkt-zhihu-strategist.md
+mkt-book-marketer.md
 ```
 
 ### Product (`prod-*`)
@@ -299,6 +300,8 @@ spec-compliance-auditor.md
 spec-cultural-strategist.md
 spec-data-consolidation.md
 spec-dev-advocate.md
+spec-book-editor.md              spec-book-writer.md
+spec-osint-investigator.md
 ```
 
 ### Support (`support-*`)
@@ -322,16 +325,16 @@ support-finance.md               support-infrastructure.md
 
 ```
 contract-agents/
-├── agents/               # 121 agent definitions
+├── agents/               # 125 agent definitions
 │   ├── eng-*.md          # Engineering (23)
 │   ├── test-*.md         # Testing (11)
 │   ├── design-*.md       # Design (8)
-│   ├── mkt-*.md          # Marketing (16)
+│   ├── mkt-*.md          # Marketing (17)
 │   ├── prod-*.md         # Product (5)
 │   ├── pm-*.md           # Project Management (7)
 │   ├── game-*.md         # Game Development (19)
 │   ├── spatial-*.md      # Spatial Computing (6)
-│   ├── spec-*.md         # Specialized (19)
+│   ├── spec-*.md         # Specialized (22)
 │   ├── support-*.md      # Support (6)
 │   ├── AGENTS_CONTRACT.md # Shared contract
 │   └── contract-orchestrator.md # Master orchestrator

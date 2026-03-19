@@ -2,6 +2,19 @@
 
 All notable changes to contract-agents will be documented in this file.
 
+## [1.4.0] - 2026-03-19
+
+### Added
+- spec-book-editor for manuscript developmental editing, continuity checking, and pacing feedback
+- spec-book-writer for long-form book writing with consistent voice, tone, and genre conventions
+- mkt-book-marketer for self-publishing launch strategy, metadata optimization, and retail copy
+- spec-osint-investigator for open source intelligence, people-finding (TraceLabs-style), due diligence, and competitive research
+
+### Changed
+- Total agents: 121 → 125
+- Specialized count: 19 → 22
+- Marketing count: 16 → 17
+
 ## [1.3.1] - 2026-03-14
 
 ### Fixed
