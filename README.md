@@ -27,9 +27,9 @@
 
 ## What Makes Contract-Agents Different?
 
-**All agents follow [`AGENTS_CONTRACT.md`](agents/AGENTS_CONTRACT.md) v2.0** — a shared contract that ensures:
+**All agents follow [`AGENTS_CONTRACT.md`](agents/AGENTS_CONTRACT.md) v2.0** — a shared contract that instructs agents to:
 
-- **Operating Goals** — Constant velocity, smallest correct change, staff engineer bar
+- **Operating Goals** — Prefer incremental changes, maintain consistent pacing, and follow senior engineering conventions
 - **Scope Discipline** — Touch only what's required
 - **Confusion Management** — Stop on ambiguous reqs, ask clarifying questions
 - **Evidence Rules** — Support claims with evidence (file:line for code, URLs/research for non-code)
