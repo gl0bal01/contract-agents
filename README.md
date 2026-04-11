@@ -1,12 +1,12 @@
 # Contract-Agents
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Agents](https://img.shields.io/badge/agents-125-brightgreen)
+![Agents](https://img.shields.io/badge/agents-52-brightgreen)
 ![Contract](https://img.shields.io/badge/contract-v2.0-orange)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-compatible-blueviolet)
-![Kilo CLI](https://img.shields.io/badge/Kilo%20CLI-compatible-blueviolet)
-![Goose](https://img.shields.io/badge/Goose-compatible-blueviolet)
-![OpenCode](https://img.shields.io/badge/OpenCode-compatible-blueviolet)
+![Kilo CLI](https://img.shields.io/badge/Kilo%20CLI-tested-blueviolet)
+![Goose](https://img.shields.io/badge/Goose-tested-blueviolet)
+![OpenCode](https://img.shields.io/badge/OpenCode-tested-blueviolet)
 
 > Professional AI agents governed by a shared contract — specialized, consistent, and human-guided.
 
@@ -17,28 +17,32 @@
 ┌─────────────────────────────────────────────┐
 │         CONTRACT-AGENTS                     │
 │                                             │
-│   125 AI Agents • 10 Divisions • 1 Contract │
+│   52 AI Agents • 8 Divisions • 1 Contract   │
 │                                             │
 │   eng-*  test-*  design-*  mkt-*  prod-*    │
-│   pm-*   game-*  spatial-*  spec-* support- │
+│   pm-*   game-*  spec-*                     │
 └─────────────────────────────────────────────┘
 ```
 
 
 ## What Makes Contract-Agents Different?
 
-**All agents follow [`AGENTS_CONTRACT.md`](agents/AGENTS_CONTRACT.md) v2.0** — a shared contract that instructs agents to:
+**All agents follow [`AGENTS_CONTRACT.md`](agents/AGENTS_CONTRACT.md) v2.0** — a shared contract that opens with:
 
-- **Operating Goals** — Prefer incremental changes, maintain consistent pacing, and follow senior engineering conventions
-- **Scope Discipline** — Touch only what's required
-- **Confusion Management** — Stop on ambiguous reqs, ask clarifying questions
-- **Evidence Rules** — Support claims with evidence (file:line for code, URLs/research for non-code)
-- **Security First** — First-class security requirements
-- **Approval Gates** — Hard stops for risky operations
-- **Verification** — automated → tests → full → manual
-- **Commit Discipline** — Safe, bisectable history
-- **Self-Improvement** — Agents learn from corrections
-- **Delegation Policy** — Orchestrator-only sub-agent spawning
+> *"Shared rules for all agents. Individual agent files add domain-specific rules on top. **When instructions conflict, this contract wins.**"*
+
+The contract defines 12 global rules and a delegation policy. Key sections (quoted from the contract):
+
+- **Operating Goals** — *"Smallest correct change: surgical diffs over 'cleanup'"*
+- **Scope Discipline** — *"Touch only what's required. Do NOT refactor unrelated code, rename/reformat without asking"*
+- **Confusion Management** — *"If requirements are ambiguous: 1. STOP 2. Name the exact ambiguity"*
+- **Evidence Rules** — *"Support claims with evidence... provide specific evidence (file:line for code, URLs/screenshots/research for non-code)"*
+- **Security** — *"Treat security as first-class: Avoid injection, unsafe deserialization, secrets in logs, insecure defaults"*
+- **Approval Gates** — *"Stop and request explicit approval before: Adding dependencies, Changing public interfaces..."*
+- **Verification** — *"Prefer automated → focused tests → full suite → manual review"*
+- **Commit Discipline** — *"Checkpoint before significant work"*
+- **Self-Improvement** — *"After correction: Update tasks/lessons.md"*
+- **Delegation Policy** — *"Only the orchestrator spawns sub-agents. Leaf agents request delegation but don't spawn."*
 
 ## Quick Start
 
@@ -82,7 +86,7 @@ cp agents/*.md /path/to/project/.claude/agents/
 cp agents/*.md /path/to/project/.opencode/agents/
 ```
 
-Supported tools: Kilo CLI, Claude Code, Goose, OpenCode
+Tested with: Kilo CLI, Claude Code, Goose, OpenCode
 
 ## Best Practices
 
@@ -111,7 +115,7 @@ Think of this system as your team. You are the executive who sets direction.
 | You | Executive — sets goals and direction |
 | AGENTS_CONTRACT.md | Employee handbook — how everyone works |
 | contract-orchestrator | Project manager / producer |
-| pm-senior | Strategic advisor |
+| pm-project-shepherd | Strategic advisor / cross-functional coordinator |
 | Division agents (eng-*, test-*, etc.) | Specialists you delegate to |
 
 ### Where to Start?
@@ -121,7 +125,7 @@ Think of this system as your team. You are the executive who sets direction.
 | Situation | Use this agent |
 |-----------|----------------|
 | Big task, need multiple specialists | `contract-orchestrator` |
-| Need strategic guidance first | `pm-senior` |
+| Need strategic guidance first | `pm-project-shepherd` |
 | Want to see available specialists | `"List all [prefix]-* agents"` |
 | Know exactly what you need | Delegate directly to the agent |
 
@@ -137,7 +141,7 @@ The orchestrator will reply with a proposed pipeline listing every agent it plan
 
 **2. Get strategic direction first:**
 ```
-"Use pm-senior to help me plan this feature. Identify what needs
+"Use pm-project-shepherd to help me plan this feature. Identify what needs
 to happen and which agents to use."
 ```
 
@@ -158,16 +162,14 @@ to happen and which agents to use."
 
 | Prefix | Division | Count |
 |--------|----------|-------|
-| `eng-*` | Engineering | 23 |
-| `test-*` | Testing & QA | 11 |
-| `design-*` | Design & UX | 8 |
-| `mkt-*` | Marketing & Growth | 17 |
-| `prod-*` | Product Management | 5 |
-| `pm-*` | Project Management | 7 |
-| `game-*` | Game Development | 19 |
-| `spatial-*` | Spatial Computing | 6 |
-| `spec-*` | Specialized agents | 22 |
-| `support-*` | Support & Operations | 6 |
+| `eng-*` | Engineering | 18 |
+| `test-*` | Testing & QA | 7 |
+| `design-*` | Design & UX | 2 |
+| `mkt-*` | Marketing & Growth | 6 |
+| `prod-*` | Product Management | 4 |
+| `pm-*` | Project Management | 2 |
+| `game-*` | Game Development | 8 |
+| `spec-*` | Specialized agents | 4 |
 | `contract-orchestrator` | Orchestration | 1 |
 
 ## Agent Catalog
@@ -175,141 +177,83 @@ to happen and which agents to use."
 ### Engineering (`eng-*`)
 
 ```
-eng-ai-engineer.md              eng-prompt-engineer.md
-eng-backend-architect.md         eng-reliability-engineer.md
-eng-browser-extension-developer.md eng-reverse-engineer.md
-eng-cloud-architect.md           eng-senior-developer.md
-eng-data-engineer.md             eng-solidity-engineer.md
-eng-data-scientist.md            eng-technical-writer.md
-eng-devops-automator.md          eng-threat-detection-engineer.md
-eng-docs-educator.md             eng-wechat-developer.md
-eng-embedded-firmware-engineer.md
-eng-frontend-developer.md
-eng-incident-commander.md
-eng-mobile-app-builder.md
-eng-optimization-architect.md
-eng-rapid-prototyper.md
-eng-security-engineer.md
+eng-api-designer.md                  eng-frontend-developer.md
+eng-backend-architect.md             eng-git-workflow.md
+eng-browser-extension-developer.md   eng-go-engineer.md
+eng-cloud-architect.md               eng-kubernetes-operator.md
+eng-data-engineer.md                 eng-mobile-app-builder.md
+eng-data-scientist.md                eng-prompt-engineer.md
+eng-database-migration-specialist.md eng-reliability-engineer.md
+                                     eng-reverse-engineer.md
+                                     eng-rust-engineer.md
+                                     eng-security-engineer.md
+                                     eng-solidity-engineer.md
 ```
 
 ### Testing (`test-*`)
 
 ```
-test-accessibility-auditor.md    test-performance-benchmarker.md
-test-api-tester.md               test-results-analyzer.md
-test-docker-security-auditor.md  test-tool-evaluator.md
-test-evidence-collector.md       test-workflow-optimizer.md
-test-malware-analyst.md
-test-penetration-tester.md
-test-reality-checker.md
+test-accessibility-auditor.md    test-load-tester.md
+test-docker-security-auditor.md  test-malware-analyst.md
+test-evidence-collector.md       test-penetration-tester.md
+                                 test-reality-checker.md
 ```
 
 ### Design (`design-*`)
 
 ```
-design-brand-guardian.md         design-image-prompt-engineer.md
-design-inclusive-visuals-specialist.md design-ux-architect.md
-design-ui-designer.md            design-ux-researcher.md
-design-visual-storyteller.md     design-whimsy-injector.md
+design-ui-designer.md            design-ux-architect.md
 ```
 
 ### Marketing (`mkt-*`)
 
 ```
-mkt-app-store-optimizer.md       mkt-instagram-curator.md
-mkt-baidu-seo.md                 mkt-kuaishou-strategist.md
-mkt-bilibili-strategist.md       mkt-reddit-builder.md
-mkt-twitter-engager.md           mkt-seo-strategist.md
-mkt-content-creator.md           mkt-social-strategist.md
-mkt-growth-hacker.md             mkt-tiktok-strategist.md
-mkt-monetization-optimizer.md    mkt-wechat-account.md
-mkt-xiaohongshu-specialist.md    mkt-zhihu-strategist.md
-mkt-book-marketer.md
+mkt-book-marketer.md             mkt-seo-strategist.md
+mkt-email-marketer.md            mkt-tiktok-strategist.md
+mkt-growth-hacker.md             mkt-youtube-strategist.md
 ```
 
 ### Product (`prod-*`)
 
 ```
-prod-competitive-intelligence.md prod-nudge-engine.md
 prod-feedback-synthesizer.md     prod-sprint-prioritizer.md
-prod-trend-researcher.md
+prod-pricing-strategist.md       prod-trend-researcher.md
 ```
 
 ### Project Management (`pm-*`)
 
 ```
-pm-experiment-tracker.md         pm-indie-business-strategist.md
-pm-jira-steward.md               pm-project-shepherd.md
-pm-senior.md                     pm-studio-operations.md
-pm-studio-producer.md
+pm-indie-business-strategist.md  pm-project-shepherd.md
 ```
 
 ### Game Development (`game-*`)
 
-**Cross-engine:**
+**Godot:**
 ```
-game-audio-engineer.md           game-narrative-designer.md
-game-designer.md                 game-technical-artist.md
-game-level-designer.md
+game-godot-multiplayer.md        game-godot-shader.md
+game-godot-scripter.md
 ```
 
 **Unity:**
 ```
-game-unity-architect.md          game-unity-multiplayer.md
-game-unity-shader.md             game-unity-tool-dev.md
+game-unity-architect.md          game-unity-shader.md
 ```
 
 **Unreal:**
 ```
-game-unreal-artist.md            game-unreal-multiplayer.md
-game-unreal-builder.md           game-unreal-engineer.md
+game-unreal-engineer.md
 ```
 
-**Godot:**
+**Cross-engine:**
 ```
-game-godot-multiplayer.md         game-godot-scripter.md
-game-godot-shader.md
-```
-
-**Roblox:**
-```
-game-roblox-avatar.md            game-roblox-designer.md
-game-roblox-scripter.md
-```
-
-### Spatial Computing (`spatial-*`)
-
-```
-spatial-cockpit.md               spatial-visionos.md
-spatial-metal-engineer.md        spatial-xr-dev.md
-spatial-terminal.md              spatial-xr-interface.md
+game-level-designer.md           game-technical-artist.md
 ```
 
 ### Specialized (`spec-*`)
 
 ```
-spec-analytics-reporter.md       spec-identity-operator.md
-spec-arch-analyzer.md            spec-identity-trust.md
-spec-arch-debugger.md            spec-lsp-engineer.md
-spec-arch-implementer.md         spec-model-qa.md
-spec-arch-orchestrator.md
-spec-arch-planner.md             spec-report-distribution.md
-spec-blockchain-auditor.md       spec-sales-extraction.md
-spec-brutalist-critic.md         spec-digital-forensics.md
-spec-compliance-auditor.md
-spec-cultural-strategist.md
-spec-data-consolidation.md
-spec-dev-advocate.md
-spec-book-editor.md              spec-book-writer.md
-spec-osint-investigator.md
-```
-
-### Support (`support-*`)
-
-```
-support-analytics.md              support-legal.md
-support-executive-summary.md     support-responder.md
-support-finance.md               support-infrastructure.md
+spec-book-editor.md              spec-digital-forensics.md
+spec-book-writer.md              spec-osint-investigator.md
 ```
 
 ## Invocation Examples
@@ -325,17 +269,15 @@ support-finance.md               support-infrastructure.md
 
 ```
 contract-agents/
-├── agents/               # 125 agent definitions
-│   ├── eng-*.md          # Engineering (23)
-│   ├── test-*.md         # Testing (11)
-│   ├── design-*.md       # Design (8)
-│   ├── mkt-*.md          # Marketing (17)
-│   ├── prod-*.md         # Product (5)
-│   ├── pm-*.md           # Project Management (7)
-│   ├── game-*.md         # Game Development (19)
-│   ├── spatial-*.md      # Spatial Computing (6)
-│   ├── spec-*.md         # Specialized (22)
-│   ├── support-*.md      # Support (6)
+├── agents/               # 52 agent definitions
+│   ├── eng-*.md          # Engineering (18)
+│   ├── test-*.md         # Testing (7)
+│   ├── design-*.md       # Design (2)
+│   ├── mkt-*.md          # Marketing (6)
+│   ├── prod-*.md         # Product (4)
+│   ├── pm-*.md           # Project Management (2)
+│   ├── game-*.md         # Game Development (8)
+│   ├── spec-*.md         # Specialized (4)
 │   ├── AGENTS_CONTRACT.md # Shared contract
 │   └── contract-orchestrator.md # Master orchestrator
 ├── templates/            # Agent template
