@@ -11,3 +11,8 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+.cursor/
+
+# Agent tooling scratch/artifact dirs
+.omc/
+.opencode/
