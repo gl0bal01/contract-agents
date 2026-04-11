@@ -1,7 +1,7 @@
 # Contract-Agents
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Agents](https://img.shields.io/badge/agents-53-brightgreen)
+![Agents](https://img.shields.io/badge/agents-43-brightgreen)
 ![Contract](https://img.shields.io/badge/contract-v2.0-orange)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-compatible-blueviolet)
 ![Kilo CLI](https://img.shields.io/badge/Kilo%20CLI-tested-blueviolet)
@@ -17,10 +17,10 @@
 ┌─────────────────────────────────────────────┐
 │         CONTRACT-AGENTS                     │
 │                                             │
-│   53 AI Agents • 10 Divisions • 1 Contract  │
+│   43 AI Agents • 8 Divisions • 1 Contract   │
 │                                             │
 │   eng-*  test-*  design-*  mkt-*  prod-*    │
-│   pm-*   game-*  spatial-*  spec-* support- │
+│   pm-*   game-*  spec-*                     │
 └─────────────────────────────────────────────┘
 ```
 
@@ -115,7 +115,7 @@ Think of this system as your team. You are the executive who sets direction.
 | You | Executive — sets goals and direction |
 | AGENTS_CONTRACT.md | Employee handbook — how everyone works |
 | contract-orchestrator | Project manager / producer |
-| pm-senior | Strategic advisor |
+| pm-project-shepherd | Strategic advisor / cross-functional coordinator |
 | Division agents (eng-*, test-*, etc.) | Specialists you delegate to |
 
 ### Where to Start?
@@ -125,7 +125,7 @@ Think of this system as your team. You are the executive who sets direction.
 | Situation | Use this agent |
 |-----------|----------------|
 | Big task, need multiple specialists | `contract-orchestrator` |
-| Need strategic guidance first | `pm-senior` |
+| Need strategic guidance first | `pm-project-shepherd` |
 | Want to see available specialists | `"List all [prefix]-* agents"` |
 | Know exactly what you need | Delegate directly to the agent |
 
@@ -141,7 +141,7 @@ The orchestrator will reply with a proposed pipeline listing every agent it plan
 
 **2. Get strategic direction first:**
 ```
-"Use pm-senior to help me plan this feature. Identify what needs
+"Use pm-project-shepherd to help me plan this feature. Identify what needs
 to happen and which agents to use."
 ```
 
@@ -163,15 +163,13 @@ to happen and which agents to use."
 | Prefix | Division | Count |
 |--------|----------|-------|
 | `eng-*` | Engineering | 12 |
-| `test-*` | Testing & QA | 7 |
-| `design-*` | Design & UX | 3 |
-| `mkt-*` | Marketing & Growth | 6 |
+| `test-*` | Testing & QA | 6 |
+| `design-*` | Design & UX | 2 |
+| `mkt-*` | Marketing & Growth | 5 |
 | `prod-*` | Product Management | 3 |
-| `pm-*` | Project Management | 3 |
+| `pm-*` | Project Management | 2 |
 | `game-*` | Game Development | 8 |
-| `spatial-*` | Spatial Computing | 2 |
-| `spec-*` | Specialized agents | 5 |
-| `support-*` | Support & Operations | 3 |
+| `spec-*` | Specialized agents | 4 |
 | `contract-orchestrator` | Orchestration | 1 |
 
 ## Agent Catalog
@@ -190,25 +188,23 @@ eng-frontend-developer.md            eng-solidity-engineer.md
 ### Testing (`test-*`)
 
 ```
-test-accessibility-auditor.md    test-penetration-tester.md
-test-docker-security-auditor.md  test-performance-benchmarker.md
+test-accessibility-auditor.md    test-malware-analyst.md
+test-docker-security-auditor.md  test-penetration-tester.md
 test-evidence-collector.md       test-reality-checker.md
-test-malware-analyst.md
 ```
 
 ### Design (`design-*`)
 
 ```
-design-ui-designer.md            design-ux-researcher.md
-design-ux-architect.md
+design-ui-designer.md            design-ux-architect.md
 ```
 
 ### Marketing (`mkt-*`)
 
 ```
 mkt-book-marketer.md             mkt-seo-strategist.md
-mkt-email-marketer.md            mkt-social-strategist.md
-mkt-growth-hacker.md             mkt-tiktok-strategist.md
+mkt-email-marketer.md            mkt-tiktok-strategist.md
+mkt-growth-hacker.md
 ```
 
 ### Product (`prod-*`)
@@ -222,7 +218,6 @@ prod-trend-researcher.md
 
 ```
 pm-indie-business-strategist.md  pm-project-shepherd.md
-pm-senior.md
 ```
 
 ### Game Development (`game-*`)
@@ -248,25 +243,11 @@ game-unreal-engineer.md
 game-level-designer.md           game-technical-artist.md
 ```
 
-### Spatial Computing (`spatial-*`)
-
-```
-spatial-visionos.md              spatial-xr-dev.md
-```
-
 ### Specialized (`spec-*`)
 
 ```
 spec-book-editor.md              spec-digital-forensics.md
 spec-book-writer.md              spec-osint-investigator.md
-spec-brutalist-critic.md
-```
-
-### Support (`support-*`)
-
-```
-support-executive-summary.md     support-responder.md
-support-legal.md
 ```
 
 ## Invocation Examples
@@ -282,17 +263,15 @@ support-legal.md
 
 ```
 contract-agents/
-├── agents/               # 53 agent definitions
+├── agents/               # 43 agent definitions
 │   ├── eng-*.md          # Engineering (12)
-│   ├── test-*.md         # Testing (7)
-│   ├── design-*.md       # Design (3)
-│   ├── mkt-*.md          # Marketing (6)
+│   ├── test-*.md         # Testing (6)
+│   ├── design-*.md       # Design (2)
+│   ├── mkt-*.md          # Marketing (5)
 │   ├── prod-*.md         # Product (3)
-│   ├── pm-*.md           # Project Management (3)
+│   ├── pm-*.md           # Project Management (2)
 │   ├── game-*.md         # Game Development (8)
-│   ├── spatial-*.md      # Spatial Computing (2)
-│   ├── spec-*.md         # Specialized (5)
-│   ├── support-*.md      # Support (3)
+│   ├── spec-*.md         # Specialized (4)
 │   ├── AGENTS_CONTRACT.md # Shared contract
 │   └── contract-orchestrator.md # Master orchestrator
 ├── templates/            # Agent template
