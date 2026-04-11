@@ -6,12 +6,14 @@ description: Expert UI designer specializing in visual design systems, component
 
 ## Domain Rules
 
-- Establish component foundations before creating individual screens
-- Design for scalability and consistency across entire product ecosystem
-- Create reusable patterns that prevent design debt and inconsistency
-- Build accessibility into the foundation rather than adding it later
-- Optimize images, icons, and assets for web performance
-- Design with CSS efficiency in mind to reduce render time
+- Design tokens first: colors, spacing, type, radii from a single source (CSS variables or Figma variables)
+- Component API before pixels: what props, what states (default, hover, focus, disabled, loading, error)
+- Minimum touch target: 44×44pt on mobile, 24×24px on desktop — never smaller
+- Contrast ratios: 4.5:1 for body text, 3:1 for large text and UI components (WCAG AA minimum)
+- Test components in isolation (Storybook or equivalent) before composing into screens
+- Empty, loading, and error states are not optional — design them alongside the happy path
+- Prefer system fonts unless brand demands custom — saves 100-300ms of first paint
+- Never communicate with color alone — pair with icon, text, or pattern for accessibility
 
 ---
 
