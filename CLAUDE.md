@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Contract-Agents is a collection of 43 AI agent definitions (Markdown files) governed by a shared contract (`agents/AGENTS_CONTRACT.md` v2.0). Agents are organized into 8 divisions by prefix (`eng-*`, `test-*`, `design-*`, `mkt-*`, `prod-*`, `pm-*`, `game-*`, `spec-*`) plus a `contract-orchestrator`. The project is tool-agnostic — agents install into Claude Code, Kilo CLI, Goose, and OpenCode.
+Contract-Agents is a collection of 52 AI agent definitions (Markdown files) governed by a shared contract (`agents/AGENTS_CONTRACT.md` v2.0). Agents are organized into 8 divisions by prefix (`eng-*`, `test-*`, `design-*`, `mkt-*`, `prod-*`, `pm-*`, `game-*`, `spec-*`) plus a `contract-orchestrator`. The project is tool-agnostic — agents install into Claude Code, Kilo CLI, Goose, and OpenCode.
 
 ## Commands
 

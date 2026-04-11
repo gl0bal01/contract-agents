@@ -1,7 +1,7 @@
 # Contract-Agents
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Agents](https://img.shields.io/badge/agents-43-brightgreen)
+![Agents](https://img.shields.io/badge/agents-52-brightgreen)
 ![Contract](https://img.shields.io/badge/contract-v2.0-orange)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-compatible-blueviolet)
 ![Kilo CLI](https://img.shields.io/badge/Kilo%20CLI-tested-blueviolet)
@@ -17,7 +17,7 @@
 ┌─────────────────────────────────────────────┐
 │         CONTRACT-AGENTS                     │
 │                                             │
-│   43 AI Agents • 8 Divisions • 1 Contract   │
+│   52 AI Agents • 8 Divisions • 1 Contract   │
 │                                             │
 │   eng-*  test-*  design-*  mkt-*  prod-*    │
 │   pm-*   game-*  spec-*                     │
@@ -162,11 +162,11 @@ to happen and which agents to use."
 
 | Prefix | Division | Count |
 |--------|----------|-------|
-| `eng-*` | Engineering | 12 |
-| `test-*` | Testing & QA | 6 |
+| `eng-*` | Engineering | 18 |
+| `test-*` | Testing & QA | 7 |
 | `design-*` | Design & UX | 2 |
-| `mkt-*` | Marketing & Growth | 5 |
-| `prod-*` | Product Management | 3 |
+| `mkt-*` | Marketing & Growth | 6 |
+| `prod-*` | Product Management | 4 |
 | `pm-*` | Project Management | 2 |
 | `game-*` | Game Development | 8 |
 | `spec-*` | Specialized agents | 4 |
@@ -177,20 +177,26 @@ to happen and which agents to use."
 ### Engineering (`eng-*`)
 
 ```
-eng-backend-architect.md             eng-mobile-app-builder.md
-eng-browser-extension-developer.md   eng-prompt-engineer.md
-eng-cloud-architect.md               eng-reliability-engineer.md
-eng-data-engineer.md                 eng-reverse-engineer.md
-eng-data-scientist.md                eng-security-engineer.md
-eng-frontend-developer.md            eng-solidity-engineer.md
+eng-api-designer.md                  eng-frontend-developer.md
+eng-backend-architect.md             eng-git-workflow.md
+eng-browser-extension-developer.md   eng-go-engineer.md
+eng-cloud-architect.md               eng-kubernetes-operator.md
+eng-data-engineer.md                 eng-mobile-app-builder.md
+eng-data-scientist.md                eng-prompt-engineer.md
+eng-database-migration-specialist.md eng-reliability-engineer.md
+                                     eng-reverse-engineer.md
+                                     eng-rust-engineer.md
+                                     eng-security-engineer.md
+                                     eng-solidity-engineer.md
 ```
 
 ### Testing (`test-*`)
 
 ```
-test-accessibility-auditor.md    test-malware-analyst.md
-test-docker-security-auditor.md  test-penetration-tester.md
-test-evidence-collector.md       test-reality-checker.md
+test-accessibility-auditor.md    test-load-tester.md
+test-docker-security-auditor.md  test-malware-analyst.md
+test-evidence-collector.md       test-penetration-tester.md
+                                 test-reality-checker.md
 ```
 
 ### Design (`design-*`)
@@ -204,14 +210,14 @@ design-ui-designer.md            design-ux-architect.md
 ```
 mkt-book-marketer.md             mkt-seo-strategist.md
 mkt-email-marketer.md            mkt-tiktok-strategist.md
-mkt-growth-hacker.md
+mkt-growth-hacker.md             mkt-youtube-strategist.md
 ```
 
 ### Product (`prod-*`)
 
 ```
 prod-feedback-synthesizer.md     prod-sprint-prioritizer.md
-prod-trend-researcher.md
+prod-pricing-strategist.md       prod-trend-researcher.md
 ```
 
 ### Project Management (`pm-*`)
@@ -263,12 +269,12 @@ spec-book-writer.md              spec-osint-investigator.md
 
 ```
 contract-agents/
-├── agents/               # 43 agent definitions
-│   ├── eng-*.md          # Engineering (12)
-│   ├── test-*.md         # Testing (6)
+├── agents/               # 52 agent definitions
+│   ├── eng-*.md          # Engineering (18)
+│   ├── test-*.md         # Testing (7)
 │   ├── design-*.md       # Design (2)
-│   ├── mkt-*.md          # Marketing (5)
-│   ├── prod-*.md         # Product (3)
+│   ├── mkt-*.md          # Marketing (6)
+│   ├── prod-*.md         # Product (4)
 │   ├── pm-*.md           # Project Management (2)
 │   ├── game-*.md         # Game Development (8)
 │   ├── spec-*.md         # Specialized (4)
