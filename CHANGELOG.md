@@ -2,6 +2,39 @@
 
 All notable changes to contract-agents will be documented in this file.
 
+## [3.0.0] - 2026-04-11
+
+Quality-over-count release. After an independent review flagged that ~80% of agents were empty shells or generic platitudes, the catalog was aggressively audited and rebuilt around a single question per agent: *does this encode knowledge the underlying model would otherwise miss, or a distinct workflow lane worth reserving?*
+
+### Removed
+- 82 agents cut across two passes — empty shells, duplicates, and vanity job titles
+- First pass (72 agents): all `spec-arch-*` sub-agents (redundant with `contract-orchestrator`), all Roblox agents, the `eng-wechat-developer`, `eng-senior-developer`, `eng-incident-commander`, all China-platform marketing agents (`mkt-baidu-seo`, `mkt-bilibili`, `mkt-kuaishou`, `mkt-wechat-account`, `mkt-xiaohongshu`, `mkt-zhihu`), most support-* and spec-* empty shells
+- Second pass (10 agents): remaining Bucket-B shells with no real domain rules — `design-ux-researcher`, `mkt-social-strategist`, `pm-senior`, `spatial-visionos`, `spatial-xr-dev`, `spec-brutalist-critic`, `support-executive-summary`, `support-legal`, `support-responder`, `test-performance-benchmarker`
+- Two divisions collapsed entirely: `spatial-*` and `support-*`
+
+### Added
+- `mkt-email-marketer` — campaign strategy, deliverability (SPF/DKIM/DMARC), segmentation, CAN-SPAM/GDPR compliance
+- `eng-git-workflow` — force-push safety, reflog recovery, rebase discipline, bisect methodology
+- `eng-database-migration-specialist` — expand-contract pattern, online DDL, replica-lag-aware backfills
+- `eng-kubernetes-operator` — liveness-probe gotchas, QoS classes, PDBs, rolling update strategies
+- `eng-api-designer` — OpenAPI-first, RFC 7807 error envelopes, cursor pagination, deprecation headers
+- `eng-rust-engineer` — borrow checker, async runtime discipline, `thiserror`/`anyhow` split, `unsafe` contract
+- `eng-go-engineer` — goroutine leak prevention, context propagation, consumer-side interfaces, zero-value API
+- `test-load-tester` — realistic ramp profiles, p50/p95/p99 reporting, CI regression gating
+- `mkt-youtube-strategist` — thumbnail CTR, audience retention curve, session-time flywheel
+- `prod-pricing-strategist` — Van Westendorp PSM, value-based anchoring, decoy pricing, cohort testing
+
+### Changed
+- Total agents: **125 → 52** (58% cut + 10 dense additions)
+- Divisions: **10 → 8**
+- `contract-orchestrator` hardened: prime directive with self-check, hard tool boundary (may only use Agent, TaskWrite/List/Update, text output), explicit forbidden actions list, mandatory pipeline-proposal gate before dispatch, refusal template for direct-implementation requests
+- 9 thin agents rewritten with specific, actionable rules instead of platitudes: `eng-backend-architect` (API versioning, idempotency keys, connection pool bounds, circuit breakers), `eng-mobile-app-builder` (main-thread bans, lifecycle handling, Keychain/Keystore), `eng-security-engineer` (input validation, RFC-compliant encoding, argon2id, CSP), `eng-frontend-developer` (Server Components default, Core Web Vitals targets), `pm-indie-business-strategist` (runway-first, charge day one, pre-sell), `design-ui-designer` (token-first, 44pt touch targets, WCAG AA), `design-ux-architect` (semantic token naming, modular type scale), `prod-feedback-synthesizer` (signal-vs-noise triangulation), `prod-trend-researcher` (3-source verification, null hypothesis)
+- README badge, ASCII art, division table, agent catalog, and architecture section all updated to reflect 52/8 state
+- CLAUDE.md project overview updated
+
+### Philosophy
+Claude's review put it best: *"Ship 20 dense agents with the contract and this is a legitimately useful project. At 125, it's a showcase of quantity over quality."* v3.0 picks quality. Every surviving agent has real domain rules that encode failure modes, specific APIs, or named thresholds — no more job titles in YAML.
+
 ## [1.4.0] - 2026-03-19
 
 ### Added
